@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }} &middot; {{ site.title }}</title>
+    <title>{{ page.title | downcase }} &middot; {{ site.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -25,16 +25,18 @@
   </head>
 
   <body>
-    <div class="moon">
-      <div class="lunar-module">
+    <div id="moon">
+      <div id="lunar-module">
         <header>
           <h1><a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a></h1>     
         </header>
         <nav>
           <ul>
-            {% assign pages_list = site.pages %}
+            <!-- {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
+            {% include JB/pages_list %} -->
+            
+            <li><a href="/archive.html">Archive</a></li>
           </ul>
         </nav>
         <section id="main">
