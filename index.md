@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Yo
+title: Posts
 ---
 {% include JB/setup %}
 

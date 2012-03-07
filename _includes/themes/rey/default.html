@@ -12,7 +12,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/reset.css" rel="stylesheet" type="text/css" media="all">    
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
@@ -25,31 +25,26 @@
   </head>
 
   <body>
-
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
+    <div class="moon">
+      <div class="lunar-module">
+        <header>
+          <h1><a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a></h1>     
+        </header>
+        <nav>
+          <ul>
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-
-      <div class="content">
-        {{ content }}
-      </div>
-
+        </nav>
+        <section id="main">
+          {{ content }}
+        </section>
       <footer>
         <p>&copy; {{ site.author.name }} 2012</p>
       </footer>
-
-    </div> <!-- /container -->
+      </div><!-- end lunar module -->
+    </div><!-- end moon -->
 
     {% include JB/analytics %}
   </body>
