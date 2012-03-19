@@ -1,3 +1,8 @@
 exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md"]
 
 permalink: /:year/:month/:title.html
+
+title : rey.github.com
+tagline: wubwubwub
+author :
+  name : Rey Dhuny
