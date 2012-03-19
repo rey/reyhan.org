@@ -1,6 +1,8 @@
-exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md"]
-
 permalink: /:year/:month/:title.html
+
+exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md", "haml_converter.rb"]
+
+baseurl: /
 
 title : rey.github.com
 tagline: wubwubwub
