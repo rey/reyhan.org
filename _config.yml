@@ -1,0 +1,3 @@
+exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md"]
+
+permalink: /:year/:month/:title.html

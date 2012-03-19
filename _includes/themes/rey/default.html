@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title != 'home' %}{{ page.title | downcase }} &middot; {% endif %}{{ site.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="{{ ASSET_PATH }}/stylesheets/screen.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="{{ ASSET_PATH }}/images/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="imprima">
+    <div id="moon">
+      <div id="lem">
+        <header>
+          <h1><a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a></h1>     
+        </header>
+
+        <section id="main">
+          {{ content }}
+        </section>
+        <!-- end main -->
+        
+        <footer>
+          <p><a href="/">{{ site.author.name }}</a> wrote this with a little help from <a href="https://github.com/mojombo/jekyll">Jekyll</a> &lt;3</p>
+        </footer>
+      </div>
+      <!-- end lunar module -->
+    </div>
+    <!-- end moon -->
+  </body>
+</html>
