@@ -1,4 +1,3 @@
-_site/*
 _theme_packages/*
 
 Thumbs.db
@@ -8,3 +7,5 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+
+.tm_proporties
