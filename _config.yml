@@ -1,6 +1,6 @@
 permalink: /:year/:month/:title.html
 
-exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md", "haml_converter.rb"]
+exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md", "sass_converter.rb", "Gemfile", "Gemfile.lock"]
 
 baseurl: /
 
