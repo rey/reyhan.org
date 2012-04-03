@@ -16,7 +16,6 @@ body
   div#moon
     padding: $gutter/2
     margin: 0 auto
-    width: 550px
   
 body
   div#moon
@@ -65,7 +64,7 @@ body
           line-height: $gutter*1.1
         ul
           li
-            list-style-type: circle
+            list-style-type: none
           
 body
   div#moon
@@ -82,3 +81,13 @@ body
     font-size: $font-small
     text-transform: uppercase
     text-align: center
+
+@media screen and (min-width: 960px) 
+  body
+    div#moon
+      width: 40%
+      
+@media screen and (max-width: 960px) 
+  body
+    div#moon
+      width: auto
