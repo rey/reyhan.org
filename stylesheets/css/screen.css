@@ -120,7 +120,7 @@ body footer {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   body div#moon {
     width: 100%;
     padding: 12.5px 25px 0 25px;
