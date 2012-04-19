@@ -86,9 +86,10 @@ body
 @media screen and (min-width: 960px) 
   body
     div#moon
-      width: 40%
+      width: 600px
       
-@media screen and (max-width: 960px) 
+@media print, screen and (max-width: 480px)
   body
     div#moon
       width: auto
+      word-wrap: break-word
