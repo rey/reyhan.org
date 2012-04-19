@@ -16,6 +16,8 @@ body
   div#moon
     padding: $gutter/2
     margin: 0 auto
+    width: 600px
+    
   
 body
   div#moon
@@ -83,14 +85,11 @@ body
     text-transform: uppercase
     text-align: center
 
-@media screen and (min-width: 960px) 
-  body
-    div#moon
-      width: 600px
+
       
-@media print, screen and (max-width: 480px)
+      
+@media screen and (max-width: 600px)
   body
     div#moon
-      padding: $gutter
-      width: auto
-      word-wrap: break-word
+      width: 100%
+      padding: $gutter/2 $gutter 0 $gutter
