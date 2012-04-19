@@ -27,8 +27,11 @@
     <hr>
 
   {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    </ul>
+    <div class="tags">
+      <p>
+        {% for tag in page.tags %}
+        {{ tag }}{% if forloop.last != true %}, {% endif %} 
+        {% endfor %} &#8592; yet to implement
+      </p>
+    </div><!-- end tags -->
   {% endunless %}

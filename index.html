@@ -4,15 +4,13 @@ title: home
 ---
 <section id="updates">  
   
-  <h3>Updates</h3>
+  <h3>Stuff &darr;</h3>
   
   <ul>
     {% for post in site.posts %}
       <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><small>{{ post.date | date_to_string }}</small></li>
     {% endfor %}
   </ul>
-  
-  <p><a href="/archive.html">Archive</a></p>
   
 </section>
 <!-- end updates -->
