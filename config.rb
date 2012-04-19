@@ -2,7 +2,7 @@ http_path = "/"
 css_dir = "stylesheets/css/"
 sass_dir = "stylesheets/sass/"
 
-output_style = :expanded
+output_style = :compressed
 
 relative_assets = true
 
