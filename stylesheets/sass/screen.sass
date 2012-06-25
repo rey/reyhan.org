@@ -4,11 +4,15 @@ $gutter: 25px
 $font: 15px
 $font-small: 10.5px
 $blue: #3875D7
+$serif: Courier
 
 body
   background: #fff
   font-size: $font
   
+em
+  font-style: italic
+
 body.imprima
   font-family: 'Imprima', sans-serif
 
@@ -45,9 +49,27 @@ body
 body
   div#moon
     div#lem
-      h2
+      h2,h3
         text-transform: uppercase
-        margin-bottom: $gutter/2
+        font-weight: bold
+      h2
+        font-size: $font + 10
+        margin-bottom: $gutter
+      h3
+        font-size: $font +5
+        margin-bottom: $gutter/3
+        
+        
+body
+  div#moon
+    div#lem
+      pre
+        margin: 0 $gutter $gutter $gutter
+        code
+        font-family: $serif
+        color: Darkgreen 
+        
+        
         
 body
   div#moon
@@ -65,7 +87,10 @@ body
           margin-bottom: $gutter/2
         p,li
           line-height: $gutter*1.1
+        p
+          margin-bottom: $gutter
         ul
+          margin-bottom: $gutter
           li
             list-style-type: disc
             list-style-position: outside
@@ -73,11 +98,22 @@ body
 body
   div#moon
     div#lem
-      section#updates            
-        small
-          display: block
-          font-size: $font-small
-      
+      section#updates   
+        ul
+          li
+            margin-bottom: 0
+            small
+              display: block
+              font-size: $font-small
+          
+body
+  div#moon
+    div#lem
+      section#meta      
+        margin-bottom: 0
+        p
+          margin: 0
+          
 body
   footer
     padding-top: $gutter/2
