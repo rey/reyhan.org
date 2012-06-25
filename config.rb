@@ -8,4 +8,4 @@ relative_assets = true
 
 line_comments = false
 
-preferred_syntax = :sasss 
+preferred_syntax = :sass
