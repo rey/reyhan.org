@@ -16,6 +16,10 @@ Save your stash with a handy comment
 
 	git stash save "your message here"
 
+See a list of changes the next GIT PUSH will do
+
+	git diff --name-status origin/your-branch
+
 ### OS X
 Replace the default, garish 3D dock with a nice, simple 2D dock
 
