@@ -16,7 +16,7 @@ Save your stash with a handy comment
 
 	git stash save "your message here"
 
-See a list of changes the next GIT PUSH will do
+See a list of changes the next GIT PUSH will make
 
 	git diff --name-status origin/your-branch
 
