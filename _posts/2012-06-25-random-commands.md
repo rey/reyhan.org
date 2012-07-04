@@ -32,7 +32,7 @@ Clone a Remote branch
 
 	git checkout -b branch-name origin/the-branch-you-want-to-clone
 
-Reset your Current branch to origin/a-branch (Any changes to tracked files in the working tree since [commit] are discarded)
+Reset your Current branch to origin/a-branch (Any changes to tracked files in the working tree since commit are discarded)
 
 	git reset --hard origin/a-branch
 
