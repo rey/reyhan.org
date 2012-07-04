@@ -9,7 +9,6 @@ tags:
 - terminal
 ---
 
-### Git
 Save your stash with a handy comment
 
 	git stash save "your message here"
