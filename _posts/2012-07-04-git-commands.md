@@ -29,6 +29,10 @@ Clone a Remote branch
 
 	git checkout -b branch-name origin/the-branch-you-want-to-clone
 
+Rename a branch
+
+	git branch -m old-branch-name new-branch-name
+
 Reset your Current branch to origin/a-branch (Any changes to tracked files in the working tree since commit are discarded)
 
 	git reset --hard origin/a-branch
