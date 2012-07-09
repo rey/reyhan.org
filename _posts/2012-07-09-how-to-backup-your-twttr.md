@@ -12,7 +12,7 @@ _I've been a twttr user since [July 14, 2006](http://twbirthday.com/rey). It rec
 
 Currently, you can't get more than ~3000 updates from the twttr API. It is what it is. To get to the point where I own all 19,477 of my twttr updates took a bit of time. Your mileage may vary.
 
-###  Request to access your personal data
+### Request to access your personal data
 
 When I realised that there was no feasible way of getting access to my historical twttr updates, I found [Privacy International's handy guide](https://www.privacyinternational.org/blog/what-does-twitter-know-about-its-users-nologs) which walks you through the convoluted process of filing a request to Twitter for all the data they hold on a specific account if you're a citizen of the EU.
 
