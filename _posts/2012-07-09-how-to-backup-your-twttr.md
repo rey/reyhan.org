@@ -14,7 +14,7 @@ Currently, you can't get more than ~3000 updates from the twttr API. It is what 
 
 ###  Request to access your personal data
 
-When I realised that there was no feasible way of getting access to my historical twttr updates, I found [Privacy International's handy guide](https://www.privacyinternational.org/blog/what-does-twitter-know-about-its-users-nologs) which walks you through the convoluted process of filing a request to Twitter for all the data they hold on a specific account.
+When I realised that there was no feasible way of getting access to my historical twttr updates, I found [Privacy International's handy guide](https://www.privacyinternational.org/blog/what-does-twitter-know-about-its-users-nologs) which walks you through the convoluted process of filing a request to Twitter for all the data they hold on a specific account if you're a citizen of the EU.
 
 I sent my request on __April 18, 2012__ and received a ZIP file containing a bunch of text files on __May 11, 2012__.
 
