@@ -9,6 +9,9 @@ $serif: Courier
 body
   background: #fff
   font-size: $font
+
+strong
+  font-weight: bold
   
 em
   font-style: italic
@@ -65,7 +68,7 @@ body
     div#lem
       pre
         margin: 0 $gutter $gutter $gutter
-        code
+      code
         font-family: $serif
         color: Darkgreen 
         
@@ -87,13 +90,16 @@ body
           margin-bottom: $gutter/2
         p,li
           line-height: $gutter*1.1
+          list-style-position: outside
         p
           margin-bottom: $gutter
         ul
           margin-bottom: $gutter
           li
             list-style-type: disc
-            list-style-position: outside
+        ol
+          li
+            list-style-type: decimal
           
 body
   div#moon
