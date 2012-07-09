@@ -24,7 +24,7 @@ When I received my ZIP file I was thrilled, skimmed through my twttr updates the
 
 ### Getting my last 3000 updates
 
-Before I could look at the automation bit I needed to get hold of all the updates from May 10 (the latest update in the `tweets.csv` file from the ZIP) up to my latest update (July 9).
+Before I could look at the automation bit I needed to get hold of all the updates from May 10 (the latest update in the `rey-tweets.txt` file from the ZIP) up to my latest update (July 9).
 
 I used [Erik Michaels-Ober's](https://github.com/sferik) [t](http://sferik.github.com/t/). This is a  a command-line interface for Twitter. It's pretty sick.
 
