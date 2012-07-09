@@ -9,4 +9,4 @@ tags: [tools]
 
 [T](http://sferik.github.com/t/) &mdash; A command-line power tool for Twitter.
 
-
+[Google Refine](http://code.google.com/p/google-refine/) &mdash; A power tool for working with messy data (formerly Freebase Gridworks)
