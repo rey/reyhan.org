@@ -2,15 +2,12 @@
 layout: page
 title: home
 ---
-<section id="updates">  
-  
-  <h3>Stuff &darr;</h3>
-  
+<section class="sixteen columns">    
+    
   <ul>
     {% for post in site.posts %}
-      <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><small>{{ post.date | date_to_string }}</small></li>
+      <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></li>
     {% endfor %}
   </ul>
   
 </section>
-<!-- end updates -->

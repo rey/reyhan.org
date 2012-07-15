@@ -1,37 +1,34 @@
-<section id="post">
+<article class="ten columns">
 <h2>{{ page.title }}</h2>
-
 {{ content }}
-</section>
+</article>
 <!-- end post -->
-<hr>
-<section id="meta">
-<p>This was posted on {{ page.date | date_to_long_string }}.</p>
-</section>
 
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
-      </ul>
-    </div>
-    <hr>
-
+<aside class="five columns offset-by-one">
+  <div class="meta">
+    <p>This was posted on {{ page.date | date_to_long_string }}.</p>
+  </div>
+  
+  <div>
+    <h3>Posts!</h3>
+    <ul>
+      {% for post in site.posts %}
+        <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></li>
+      {% endfor %}
+    </ul>
+  </div>
+  
   {% unless page.tags == empty %}
-    <div class="tags">
-      <p>
+  <div>
+    <h3>Tags!</h3>
+      <ul>
         {% for tag in page.tags %}
-        {{ tag }}{% if forloop.last != true %}, {% endif %} 
-        {% endfor %} &#8592; yet to implement
-      </p>
-    </div><!-- end tags -->
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+  </div>
   {% endunless %}
+  
+</aside>
+
+

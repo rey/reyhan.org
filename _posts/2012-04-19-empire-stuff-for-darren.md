@@ -2,7 +2,8 @@
 layout: post
 title: "Empire stuff for @darrenux"
 category: 
-tags: [infovis]
+tags:
+- infovis
 ---
 * http://pmcruz.com/visual-experiments/visualizing-empires
 * http://pmcruz.com/information-visualization/empires-decline-%E2%80%93%C2%A0revisited

@@ -10,29 +10,25 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="{{ ASSET_PATH }}/stylesheets/css/screen.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="shortcut icon" href="{{ ASSET_PATH }}/images/rey.png">
-    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+    <link href="/assets/stylesheets/css/skeleton/skeleton.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/stylesheets/css/skeleton/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/stylesheets/css/skeleton/layout.css" rel="stylesheet" type="text/css" media="all">
+    
+    <link href="/assets/stylesheets/css/screen.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/assets/images/rey.png">
   </head>
 
-  <body class="imprima">
-    <div id="moon">
-      <div id="lem">
-        <header>
-          <h1><a class="brand" href="/">{{ site.title }}</a></h1>     
-        </header>
+  <body>
+    <div class="container">
+      <header class="sixteen columns">
+        <h1><a class="brand" href="/">{{ site.title }}</a> <small>{{ site.tagline }}</small></h1>
+      </header><!-- end 16c -->
 
-        <section id="main">
-          {{ content }}
-        </section>
-        <!-- end main -->
+        {{ content }}
         
-        <footer>
-          <p> &lt;3<br/><a href="/"><a href="https://github.com/mojombo/jekyll">Jekyll</a></p>
-        </footer>
-      </div>
-      <!-- end lunar module -->
-    </div>
-    <!-- end moon -->
+      <footer class="sixteen columns">
+        <p> &lt;3 <a href="/"><a href="https://github.com/mojombo/jekyll">Jekyll</a> + <a href="http://getskeleton.com">Skeleton</p>
+      </footer>
+    </div><!-- end container -->
   </body>
 </html>
