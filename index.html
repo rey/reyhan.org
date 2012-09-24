@@ -2,12 +2,10 @@
 layout: page
 title: home
 ---
-<section class="sixteen columns">    
-    
+<section id ="contents" class="eleven columns">
   <ul>
     {% for post in site.posts %}
-      <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></li>
+      <li><h3><a title="Posted on {{ post.date | date_to_string }}" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3><summary>{{ post.content | strip_html | truncate: 125 }}</summary></li>
     {% endfor %}
   </ul>
-  
 </section>

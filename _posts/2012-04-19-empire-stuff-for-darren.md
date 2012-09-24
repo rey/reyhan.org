@@ -5,6 +5,9 @@ category:
 tags:
 - infovis
 ---
+
+_I have no recollection as to why I made this list._
+
 * http://pmcruz.com/visual-experiments/visualizing-empires
 * http://pmcruz.com/information-visualization/empires-decline-%E2%80%93%C2%A0revisited
 * http://riseandfall.donotremove.co.uk/

@@ -1,34 +1,6 @@
-<article class="ten columns">
+<article class="eleven columns">
 <h2>{{ page.title }}</h2>
-{{ content }}
+  <small class="meta"><p>Posted on {{ page.date | date_to_long_string }}.</p></small>
+  {{ content }}
 </article>
 <!-- end post -->
-
-<aside class="five columns offset-by-one">
-  <div class="meta">
-    <p>This was posted on {{ page.date | date_to_long_string }}.</p>
-  </div>
-  
-  <div>
-    <h3>Posts!</h3>
-    <ul>
-      {% for post in site.posts %}
-        <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></li>
-      {% endfor %}
-    </ul>
-  </div>
-  
-  {% unless page.tags == empty %}
-  <div>
-    <h3>Tags!</h3>
-      <ul>
-        {% for tag in page.tags %}
-          <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
-  </div>
-  {% endunless %}
-  
-</aside>
-
-

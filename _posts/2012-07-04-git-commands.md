@@ -9,6 +9,8 @@ tags:
 - terminal
 ---
 
+_A bunch of commands I use, forget and have to Google again._
+
 Save your stash with a handy comment
 
 	git stash save "your message here"

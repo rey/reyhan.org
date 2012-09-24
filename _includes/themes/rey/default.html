@@ -15,19 +15,30 @@
     <link href="/assets/stylesheets/css/skeleton/layout.css" rel="stylesheet" type="text/css" media="all">
     
     <link href="/assets/stylesheets/css/screen.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'> -->
+    
     <link rel="shortcut icon" href="/assets/images/rey.png">
   </head>
 
   <body>
     <div class="container">
       <header class="sixteen columns">
-        <h1><a class="brand" href="/">{{ site.title }}</a> <small>{{ site.tagline }}</small></h1>
+        <h1><a title="{{ site.tagline }}" class="brand" href="/">{{ site.title }}</a></h1>
       </header><!-- end 16c -->
 
         {{ content }}
         
+        <section id="about" class="four columns offset-by-one">
+          <h2>About</h2>
+          <p>Hello &mdash; this is where <a href="http://reyhan.org">Reyhan Dhuny</a> posts internet things.</p>
+          
+          <p>Enjoy your stay. You break it you bought it.</p>
+          
+          <p class="byline">- <a href="mailto:rey@zzmag.com">rad</a></p>
+        </section>
       <footer class="sixteen columns">
-        <p> &lt;3 <a href="/"><a href="https://github.com/mojombo/jekyll">Jekyll</a> + <a href="http://getskeleton.com">Skeleton</p>
+        <p> &lt;3 <a href="/"><a href="https://github.com/mojombo/jekyll">Jekyll</a> + <a href="http://getskeleton.com">Skeleton</a></p>
       </footer>
     </div><!-- end container -->
   </body>
