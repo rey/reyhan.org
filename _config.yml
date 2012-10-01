@@ -4,7 +4,7 @@ exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md", "sas
 
 baseurl: /
 
-title : Untitled
+title : This is my homepage
 tagline: wubwubwub
 author :
   name : Rey Dhuny

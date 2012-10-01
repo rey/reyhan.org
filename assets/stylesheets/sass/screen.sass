@@ -7,7 +7,8 @@ body
 
 a
   color: #0606ee
-
+b
+  font-weight: bold
 pre
   margin: $gutter
 code,
@@ -15,8 +16,7 @@ kbd
   color: darkGreen
   font-family: Courier
     
-p.byline
-  margin-left: $gutter/2
+
 
 header
   h1
@@ -42,11 +42,17 @@ section#contents
         margin-left: $gutter/2
 
 section#about
+  div
+    margin-bottom: $gutter
   h2
     font-size: 16px
     line-height: 25px
   p
     margin-bottom: $gutter/2
+  ul.planets
+    li
+      display: inline-block
+      margin-right: $gutter/4
 
 /* article styles */
 article
