@@ -1,9 +1,9 @@
----
-layout: default
----
 <section id ="contents" class="eleven columns">
+
+<h2>Archive for {{ page.period["month"] | date: "%B" }} {{page.period["year"]}}</h2>
+
   <ul>
-    {% for post in site.posts %}
+    {% for post in page.period_posts %}
       <li><h3><a title="Posted on {{ post.date | date_to_string }}" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
         <summary>{{ post.content | strip_html | truncate: 125 }}</summary></li>
     {% endfor %}

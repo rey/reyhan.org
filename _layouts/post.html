@@ -1,4 +1,9 @@
 ---
 layout: default
 ---
-{% include themes/rey/post.html %}
+<article class="eleven columns">
+<h2>{{ page.title }}</h2>
+  <small class="meta"><p>Posted on {{ page.date | date_to_long_string }}.</p></small>
+  {{ content }}
+</article>
+<!-- end post -->
