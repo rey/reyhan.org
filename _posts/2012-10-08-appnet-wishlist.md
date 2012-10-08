@@ -7,7 +7,7 @@ tags:
 - wishlist
 ---
 
-_I've signed up to [App.net](http://app.net) because I think twttr is doomed. Here is a wish list which needs to be satisfied in order for App to work for me as a twttr-esque service &mdash; I appreciate the service is in Alpha._
+_I've signed up to [App.net](http://app.net) because twttr is making some bad decisions. Here is a wish list which needs to be satisfied in order for App to work for me as a twttr-esque service &mdash; I appreciate the service is in Alpha._
 
 ### Major
 
