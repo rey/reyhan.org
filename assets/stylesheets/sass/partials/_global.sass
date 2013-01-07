@@ -1,4 +1,5 @@
 body
+  
   background-color: #f1efec
   font-family: $font-family
   font-size: $base-font-size
@@ -51,14 +52,8 @@ body
 .rey
   padding-top: $gutter-width*2
   +container($total-columns)
-  
-  aside
-    +prefix(1)
-    +span-columns(3 omega)
-  
-  
+  +susy-grid-background
   section#index
-    +span-columns(8)
     article
       margin-bottom: $gutter-width*2
       h2
@@ -69,6 +64,20 @@ body
         line-height: $base-line-height
 
 
++at-breakpoint($desktop)  
+  section#index
+    +span-columns(8)
+
+  aside
+    +prefix(1)
+    +span-columns(3 omega)
+
+
++at-breakpoint($small)  
+  section#index
+    //+span-columns(6)
+  aside
+    //+span-columns(2 omega)
 
 
 
