@@ -1,6 +1,11 @@
+require "susy"
+
+
 http_path = "/"
 css_dir = "assets/stylesheets/css/"
 sass_dir = "assets/stylesheets/sass/"
+images_dir = "assets/images/"
+fonts_dir = "assets/fonts/"
 
 output_style = :compressed
 

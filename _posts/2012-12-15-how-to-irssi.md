@@ -46,7 +46,7 @@ If you want to keep logs of your chats, etc then you want to
 
     /set autolog on
     
-Logs can be found in `~/irclogs/
+Logs can be found in `~/irclogs/`
 
 ### Use Screen because awesome
 
