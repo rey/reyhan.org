@@ -2,7 +2,7 @@
 layout: default
 title: home
 ---
-<section id ="contents" class="eleven columns">
+<section id="contents">
   <ul>
     {% for post in site.posts %}
       <li><h3><a title="Posted on {{ post.date | date_to_string }}" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
