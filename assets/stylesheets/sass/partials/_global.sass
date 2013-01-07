@@ -16,10 +16,13 @@ body
     font-size: $base-font-size
   h3
     font-size: $base-font-size
+    font-weight: 700
   h4
     font-size: $base-font-size
   b,.bold
     font-weight: 700
+  em
+    font-style: italic
   ul.icons,
   ol.icons
     li
@@ -35,6 +38,12 @@ body
         display: inline-block
   a
     color: blue
+  pre
+    margin: $gutter-width
+  code,
+  kbd
+    color: darkGreen
+    font-family: Courier
   
   aside
     p
@@ -46,6 +55,7 @@ body
     
   footer
     clear: both
+    border-top: 1px solid #ccc
     padding-top: $gutter-width
     text-align: center
     
@@ -62,10 +72,25 @@ body
       summary
         margin-left: $gutter-width/2
         line-height: $base-line-height
+  #post
+    h2
+      margin-bottom: 0
+      font-weight: 700
+    small
+      p
+        font-size: $base-font-size*0.7
+    p
+      line-height: $base-line-height
+    ul
+      li
+        list-style-type: disc
+    ol
+      li
+        list-style-type: decimal
 
-
-+at-breakpoint($desktop)  
-  section#index
++at-breakpoint($desktop)
+  section#index,
+  article#post
     +span-columns(8)
 
   aside
