@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Handy tools"
-category: 
 tags:
 - tools
 ---

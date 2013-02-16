@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Random commands"
-category: 
 tags:
 - commands
 - git

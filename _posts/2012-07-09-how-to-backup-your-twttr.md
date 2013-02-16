@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "How to backup your twttr"
-category: 
 tags:
 - twttr
 ---
+
+_**UPDATE (16 Feb 2013)** twttr now allows you to [download your twttr archive](https://support.twitter.com/articles/20170160-how-to-download-your-twitter-archive)_
 
 _I've been a twttr user since [July 14, 2006](http://twbirthday.com/rey). It recently dawned on me that my twttr archive is an (albeit mudane) running commentary of my life. I've never been one to keep a diary so I thought it important that I have a backup &mdash; this is what I did._
 

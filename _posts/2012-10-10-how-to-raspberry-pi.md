@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How to Raspberry Pi"
-category: 
 tags:
 - raspberrypi
 ---

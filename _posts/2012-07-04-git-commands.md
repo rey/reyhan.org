@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "GIT commands"
-category: 
-category: 
 tags:
 - git
 - commands

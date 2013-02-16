@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Resources for this website"
-category: 
 tags:
 - jekyll
 ---

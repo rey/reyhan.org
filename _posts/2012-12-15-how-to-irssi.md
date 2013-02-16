@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How to Irssi"
-category: 
 tags:
 - howto
 - irssi

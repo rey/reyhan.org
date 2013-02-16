@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "App.net wishlist"
-category: 
 tags:
 - app
 - wishlist

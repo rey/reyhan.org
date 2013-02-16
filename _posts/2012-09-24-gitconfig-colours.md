@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ".gitconfig colours"
-category: 
 tags:
 - git
 ---
