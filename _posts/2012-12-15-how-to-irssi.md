@@ -36,16 +36,33 @@ Here is a basic example that should get you up and running -- replace with your 
 Using the following command from your terminal
 
     irssi
+
+### Navigating
     
 Use `CTRL + P` and `CTRL + N` to cycle through windows -- [here is list of all the commands](http://irssi.org/beginner/#c2).
+
+Scrolling on a Mac is a bit fiddly. If you're on a laptop (or using a small keyboard) then hold `Shift + fn` and use the up/down arrow keys. If you have have a full-size external keyboard then hold `Shift` and use the Page Up/Down keys.
 
 ### Enable auto logging
 
 If you want to keep logs of your chats, etc then you want to
 
     /set autolog on
+    /save
     
 Logs can be found in `~/irclogs/`
+
+### Enable terminal notifications
+
+If you want your terminal to notify you on certain conditions then
+
+    /set beep_msg_level MSGS NOTICES DCC DCCMSGS HILIGHT
+    /set bell_beeps ON
+    /save
+    
+Delete as appropriate. I used `/set beep_msg_level MSGS HILIGHT`
+
+
 
 ### Use Screen because awesome
 
