@@ -1262,17 +1262,22 @@ body {
   background-color: #f1efec;
   color: #444444;
 }
-body h3, body b, body strong {
+body h2, body h3, body b, body strong {
   font-weight: 700;
+  color: #4b494a;
 }
 body h1, body h2, body h3, body p, body ul, body ol, body li {
   margin-bottom: 1em;
+}
+body h2 {
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
 }
 body p, body ul, body ol {
   line-height: 1.5em;
 }
 body a {
-  color: blue;
+  color: #5656d8;
 }
 body header {
   margin-bottom: 2em;
@@ -1313,6 +1318,8 @@ body header h1 span:hover {
 }
 body header a {
   text-decoration: none;
+  color: #4b494a;
+  font-weight: 700;
 }
 body #index,
 body #post,
@@ -1351,8 +1358,8 @@ body footer {
     font-size: 1.25em;
   }
 
-  section#index,
-  article#post {
+  #index,
+  #post {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
@@ -1368,6 +1375,9 @@ body footer {
 #index article {
   margin-bottom: 2em;
 }
+#index article h2 {
+  font-weight: 400;
+}
 #index article h2 a {
   text-decoration: none;
 }
@@ -1376,7 +1386,6 @@ body footer {
 }
 
 #post h2 {
-  margin-bottom: 0;
   font-weight: 700;
 }
 #post ul li {

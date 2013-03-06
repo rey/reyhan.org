@@ -2,10 +2,14 @@ body
   font-family: $font-family
   background-color: #f1efec
   color: $black
-  h3, b, strong
+  h2, h3, b, strong
     font-weight: 700
+    color: $brown
   h1, h2, h3, p, ul, ol, li
     margin-bottom: $gutter-width
+  h2
+    font-size: $base-font-size*1.15
+    margin-bottom: 0.5em
   p, ul, ol
     line-height: $base-line-height
   a
@@ -41,6 +45,8 @@ body
         border: none
     a
       text-decoration: none
+      color: $brown
+      font-weight: 700
   #index,
   #post,
   aside
@@ -65,8 +71,8 @@ body
   header
     h1
       font-size: $base-font-size*1.25
-  section#index,
-  article#post
+  #index,
+  #post
     +span-columns(8)
   aside
     +prefix(1)
