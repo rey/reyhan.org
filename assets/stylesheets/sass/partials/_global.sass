@@ -7,7 +7,7 @@ body
   h1, h2, h3, p, ul, ol, li
     margin-bottom: $gutter-width
   p, ul, ol
-    +adjust-font-size-to($base-font-size*0.85)
+    line-height: $base-line-height
   a
     color: $blue
   header
@@ -41,11 +41,11 @@ body
         border: none
     a
       text-decoration: none
-
+  #index,
+  #post,
   aside
-    p
-      line-height: $base-line-height
-      +adjust-font-size-to($base-font-size*0.85)
+    font-size: $base-font-size*0.85
+  aside
     ul
       li
         display: inline-block
@@ -64,7 +64,7 @@ body
 +at-breakpoint($desktop)
   header
     h1
-      +adjust-font-size-to($base-font-size*1.25)
+      font-size: $base-font-size*1.25
   section#index,
   article#post
     +span-columns(8)
