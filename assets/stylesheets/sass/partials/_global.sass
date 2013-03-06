@@ -22,6 +22,8 @@ body
         padding: $gutter-width/2 $gutter-width $gutter-width/2 $gutter-width
         +border-radius(10px)
         position: relative
+        border-bottom: 1px solid $grey
+        border-right: 1px solid $grey
       span:after
         content: ""
         position: absolute
@@ -34,6 +36,8 @@ body
         /* reduce the damage in FF3.0 */
         display: block
         width: 0
+      span:hover
+        border: none
     a
       text-decoration: none
   a
