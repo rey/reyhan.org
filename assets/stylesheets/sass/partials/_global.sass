@@ -11,7 +11,7 @@ body
   header
     margin-bottom: $gutter-width*2
     h1
-      +adjust-font-size-to($base-font-size*1.25)
+      
       line-height: normal
       img, span
         display: inline-block
@@ -24,6 +24,7 @@ body
         position: relative
         border-bottom: 1px solid $grey
         border-right: 1px solid $grey
+        margin-right: 0
       span:after
         content: ""
         position: absolute
@@ -96,6 +97,12 @@ body
         list-style-type: decimal
 
 +at-breakpoint($desktop)
+  header
+    h1
+      +adjust-font-size-to($base-font-size*1.25)
+
+
+
   section#index,
   article#post
     +span-columns(8)
