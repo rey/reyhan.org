@@ -4,14 +4,15 @@ body
   color: $black
   h3, b, strong
     font-weight: 700
-  h1, h2, h3, h4, p, ul, ol, li
+  h1, h2, h3, p, ul, ol, li
     margin-bottom: $gutter-width
   p, ul, ol
     +adjust-font-size-to($base-font-size*0.85)
+  a
+    color: $blue
   header
     margin-bottom: $gutter-width*2
     h1
-      
       line-height: normal
       img, span
         display: inline-block
@@ -30,29 +31,18 @@ body
         position: absolute
         top: 10px
         bottom: auto
-        left: -13px /* controls horizontal position */
+        left: -13px
         border-width: 8px 13px 8px 0
         border-style: solid
         border-color: transparent $white
-        /* reduce the damage in FF3.0 */
         display: block
         width: 0
       span:hover
         border: none
     a
       text-decoration: none
-  a
-    color: $blue
 
-  pre
-    margin: $gutter-width
-  code,
-  kbd
-    color: darkGreen
-    font-family: Courier
-  
   aside
-    div:first-child
     p
       line-height: $base-line-height
       +adjust-font-size-to($base-font-size*0.85)
@@ -60,8 +50,7 @@ body
       li
         display: inline-block
         margin-right: $gutter-width/4
-    
-    
+        
   footer
     clear: both
     border-top: 1px solid #ccc
@@ -71,38 +60,7 @@ body
 .rey
   padding-top: $gutter-width
   +container($total-columns)
-  section#index
-    article
-      margin-bottom: $gutter-width*2
-      h2
-        font-weight: 400
-        a
-          text-decoration: none
-      summary
-        margin-left: $gutter-width/2
-  #post
-    h2
-      margin-bottom: 0
-      font-weight: 700
-    small
-      p
-        //font-size: $base-font-size*0.7
-    p, li
-      line-height: $base-line-height
-    ul
-      li
-        list-style-type: disc
-    ol
-      li
-        list-style-type: decimal
-    p
-      img
-        width: 100%
-        height: auto
-    blockquote
-      margin-left: $gutter-width
-      p
-        color: #333
+
 +at-breakpoint($desktop)
   header
     h1
