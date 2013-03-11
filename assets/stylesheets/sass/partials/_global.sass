@@ -53,9 +53,17 @@ body
     font-size: $base-font-size*0.85
   aside
     ul
+      +column-count(2)
       li
-        display: inline-block
-        margin-right: $gutter-width/4
+        font-size: 0.85em
+    ul.elsewhere
+      li
+        a
+          color: $brown
+    ul.elsewhere:hover
+      li
+        a
+          color: $blue
         
   footer
     clear: both
