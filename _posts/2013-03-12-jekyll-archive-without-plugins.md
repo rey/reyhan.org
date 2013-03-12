@@ -7,7 +7,7 @@ tags:
 - reyhan.org
 ---
 
-_I got round to putting up an [archive page](http://reyhan.org/archive.html) for reyhan.org and thought I'd jot some notes down for anybody who else who wanted to do the same._
+I got round to putting up an [archive page](http://reyhan.org/archive.html) for reyhan.org and thought I'd jot some notes down for anybody who else who wanted to do the same.
 
 I publish reyhan.org with [GitHub Pages](http://pages.github.com/) which supports [Jekyll](https://github.com/mojombo/jekyll)[^1].
 
@@ -15,7 +15,7 @@ GitHub [runs Jekyll with](https://help.github.com/articles/using-jekyll-with-pag
 
     jekyll --pygments --no-lsi --safe
 
-The `--safe` flag disables custom plugins which means that if you're going to run your blerg through GitHub Pages you won't be able to use custom plugins, for example, [this one](https://gist.github.com/stympy/986652).
+The `--safe` flag disables custom plugins which means if you're going to run your blerg through GitHub Pages you won't be able to use custom plugins, for example, [this one](https://gist.github.com/stympy/986652).
 
 There are ways around this, namely generating your blerg locally then publishing just contents of the `_site` folder to your `gh-pages` branch but being me, a lazy developer, this sounds like more hassle than it's worth, especially when I have a nice workflow for creating a new blog post, having it all in one repo and having GitHub do all the heavy lifting.
 
