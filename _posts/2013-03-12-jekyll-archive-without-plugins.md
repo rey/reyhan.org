@@ -27,6 +27,6 @@ Anyhoo, to get my Archive page up and running[^2], I used [this template code by
 [^1]:
 Jekyll is awesome &mdash; I should probably list the ways one day
 [^2]:
-Originally this read <q>Anyhoo, to get my Archive page cracking</q> but I don't think I could get away with it.
+Originally this read <q>Anyhoo, to get my Archive page cracking</q> but I didn't think I could get away with it.
 [^3]:
 If you look at the actual `archive.html` template [in my repo](https://github.com/rey/reyhan.org/blob/gh-pages/archive.html), you'll notice that the indentation is somewhat odd. This is because when I [view source](view-source:http://reyhan.org/archive.html) I like to see properly indented markup. It's just how I roll. 
