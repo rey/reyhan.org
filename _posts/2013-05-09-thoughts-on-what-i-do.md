@@ -14,8 +14,8 @@ I was getting a direct train but I occasionally change halfway. Distracted by Vi
 
 When I reopened my laptop, the gentleman (who I'll call Joe) struck up a conversation. He told me that a few months ago he bought a MacBook after many, many years of using Windows.
 
-I asked him why he decided to switch to a Mac after many years of using Windows and he told me that his son and daughter-in-law both use Macs he found them more _user friendly_. That said, he went on to explain that he was still getting used to the OS X operating system.
+I asked him why he decided to switch to a Mac after years of using Windows and he told me that his son and daughter-in-law both use Macs and after having a go found them to be more _user friendly_. That said, he went on to explain that he was still getting used to the OS X operating system.
 
-What was remarkable about talking to Joe was his appreciation of good user interface. He was genuinely excited by OS X and there were times where he dropped to a guilty whisper as he told me something he found particularly exciting, as if you shouldn't feel such _delight_ in a user experience.
+What was remarkable about talking to Joe was his appreciation of good user interface. He was genuinely excited by OS X and there were times where he dropped to a guilty whisper as he told me something he found particularly brilliant, as if you shouldn't feel such _delight_ in a user experience.
 
 My motivation for doing what I do is the opportunity to craft experiences that delight. A delightful user inteface should not be an exception but the norm.
