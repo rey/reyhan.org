@@ -18,4 +18,4 @@ I asked him why he decided to switch to a Mac after years of using Windows and h
 
 What was remarkable about talking to Joe was his appreciation of good user interface. He was genuinely excited by OS X and there were times where he dropped to a guilty whisper as he told me something he found particularly brilliant, as if you shouldn't feel such _delight_ in a user experience.
 
-My motivation for doing what I do is the opportunity to craft experiences that delight. A delightful user inteface should not be an exception but the norm.
+My motivation for doing what I do is the opportunity to craft experiences that delight. A delightful user interface should not be an exception but the norm.
