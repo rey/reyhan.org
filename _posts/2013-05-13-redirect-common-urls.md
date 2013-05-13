@@ -10,7 +10,7 @@ I've previously [pointed to thoughts on URL design](http://reyhan.org/2011/01/be
 
 Continuing on this theme, **your website should redirect common URLs**.
 
-For example, if a user visits `http://example.com/contact`, expecting your website's Contact page where your Contact page actually lives at `http://example.com/contact_us.html` the user is going to have a bad time and probably a [404](http://en.wikipedia.org/wiki/HTTP_404) for their troubles.
+For example, if a user visits `http://example.com/contact`, expecting your website's Contact page where your Contact page actually lives at `http://example.com/contact_us.html` the user is going to have a bad time and probably a [404](http://en.wikipedia.org/wiki/HTTP_404) for their trouble.
 
 The solution is to redirect common URLs to their actual locations[^1].
 
@@ -19,13 +19,13 @@ Here are a bunch of URLs that I would expect to redirect to their respective loc
 * `http://example.com/contact`
 * `http://example.com/about`
 * `http://example.com/help`
-* `http://example.com/join`, `http://example.com/signup`, `http://example.com/register`
-* `http://example.com/signin`, `http://example.com/login`
-* `http://example.com/signout`, `http://example.com/logout`
-* `http://example.com/terms`
+* `http://example.com/tos` (or `/terms`)
 * `http://example.com/privacy`
+* `http://example.com/join` (or `/signup`, `/register`)
+* `http://example.com/signin` (or `/login`)
+* `http://example.com/signout` (or `/logout`)
 
-I appreciate this sounds like common sense but you'd be amazed at the amount of websites that don't do this[^2].
+I appreciate the above sounds like common sense but you'd be amazed at the amount of websites that don't do this[^2].
 
 [^1]:
 You could argue that you should be using these common URLs to start with but, you know.
