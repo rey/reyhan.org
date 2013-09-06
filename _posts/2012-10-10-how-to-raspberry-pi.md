@@ -63,14 +63,12 @@ tags:
     cd ~/.vim
     git submodule init
     git submodule update
-
     ln -s /home/rey/.vim/vimrc /root/.vimrc
     ln -s /home/rey/.vim/ /root/.vim
 
-
 ### sudo vim /etc/network/interfaces
 
-* `sudo vim /etc/network/interfaces
+* `sudo vim /etc/network/interfaces`
 
     auto lo
     
@@ -79,7 +77,6 @@ tags:
     
     allow-hotplug wlan0
     auto wlan0
-    
     
     iface wlan0 inet dhcp
     wpa-ssid "ssid"
