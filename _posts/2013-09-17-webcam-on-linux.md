@@ -59,10 +59,9 @@ You'll want to change:
 
 Mine looks like this:
 
-```
-screen -t "CAM1" sh -c "cd ~/ && webcam .webcamrc.1"
-screen -t "CAM2" sh -c "cd ~/ && webcam .webcamrc.2"
-```
+    screen -t "CAM1" sh -c "cd ~/ && webcam .webcamrc.1"
+    screen -t "CAM2" sh -c "cd ~/ && webcam .webcamrc.2"
+
 
 ### Create a new bash alias because handy
 
