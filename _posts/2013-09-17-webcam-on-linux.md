@@ -16,7 +16,7 @@ I wanted to keep an eye on a family pet when I was out the house so installed De
 
 ## What I did
 
-After a bit of a Google about, I decided on a piece of a software called (aptly) [webcam](http://packages.debian.org/sid/webcam).
+After a bit of a Google about, I decided on a piece of a software called (funnily enough) [webcam](http://packages.debian.org/sid/webcam).
 
 It's quite straightforward and after poking the `.webcamrc` config file got it working nicely.
 
@@ -34,8 +34,6 @@ It's quite straightforward and after poking the `.webcamrc` config file got it w
 </script>
 
 ## Run `webcam`
-
-`webcam`
 
 Assuming all is working correctly you should have a local archive being kept at the `webcam` folder and the latest photo should be uploaded to `your.server.com/cam` on detecting a change.
 
