@@ -8,6 +8,8 @@ tags:
 
 I wanted to keep an eye on a family pet when I was out the house so installed Debian on an old box and set about investigating the weird and wonderful world of webcams on Linux[^1].
 
+I stuck both [single](https://github.com/rey/.webcam/tree/master) and [multiple](https://github.com/rey/.webcam/tree/multi) webcam configs on GitHub.
+
 ## My requirements
 
 1. A webcam that takes a photo on detecting motion.
@@ -31,7 +33,7 @@ After a bit of a Googling, I decided on a piece of a software called [webcam](ht
 <script src="https://gist.github.com/rey/6606468.js">
 </script>
 
-## Run `webcam`
+### Run `webcam`
 
     cd ~/
     webcam
@@ -46,13 +48,7 @@ Now that's running you may want to use more than one webcam[^3], I initially str
 
     touch .webcamrc.1 .webcamrc.2
 
-### Edit the config files
-
-You'll want to change:
-
-1. The webcam device ID.
-2. The archive path.
-3. The temp uploading file.
+Edit the config files accordingly.
 
 ## Run the `webcam` processes with `screen`
 
@@ -73,10 +69,12 @@ Mine looks like this:
 
     alias watch='screen -S cam -c .screenrc.webcam'
 
-### Run the webcams using `watch`
+### Launch the `screen` session
+
+    watch
 
 [^1]:
-When I was much, much younger in the days of Mandrake Linux I did try and get various webcams working, to little success.
+When I was younger in the days of Mandrake Linux I did try and get various webcams working, to little success.
 
 [^2]:
 You could do loads of cool things with an archive, namely with ffmpeg.
