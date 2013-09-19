@@ -35,7 +35,6 @@ After a bit of a Googling, I decided on a piece of a software called [webcam](ht
 
 ### Run `webcam`
 
-    cd ~/
     webcam
 
 Assuming you don't get any errors your webcam should now be watching for changes. You can view the latest photo at `your.server.com/webcam/capture.jpg` and a local archive can be found at `~/webcam`.
