@@ -20,11 +20,11 @@ After a bit of a Googling, I decided on a piece of a software called [webcam](ht
 
 ### Install `webcam`
 
-`apt-get install webcam`
+    apt-get install webcam
 
 ### Create a .webcamrc
 
-`touch ~/.webcamrc`
+    touch ~/.webcamrc
 
 ### Example .webcamrc
 
@@ -44,7 +44,7 @@ Now that's running you may want to use more than one webcam[^3], I initially str
 
 ### Create a `.webcamrc` per webcam
 
-`touch .webcamrc.1 .webcamrc.2`
+    touch .webcamrc.1 .webcamrc.2
 
 ### Edit the config files
 
@@ -60,18 +60,18 @@ I wanted to keep these running `webcam` processes tidied away so decided to stic
 
 ### Create a `.screenrc.webcam`
 
-`touch .screenrc.webcam`
+    touch .screenrc.webcam
 
 Mine looks like this:
 
-   # Create a new window called `CAM1` and start the `webcam` process using the `.webcamrc.1` config file
-   screen -t "CAM1" sh -c "cd ~/ && webcam .webcamrc.1"
-   # Create a new window called `CAM2` and start the `webcam` process using the `.webcamrc.2` config file
-   screen -t "CAM2" sh -c "cd ~/ && webcam .webcamrc.2"
+    # Create a new window called `CAM1` and start the `webcam` process using the `.webcamrc.1` config file
+    screen -t "CAM1" sh -c "cd ~/ && webcam .webcamrc.1"
+    # Create a new window called `CAM2` and start the `webcam` process using the `.webcamrc.2` config file
+    screen -t "CAM2" sh -c "cd ~/ && webcam .webcamrc.2"
 
 ### Create a new bash alias because handy
 
-`alias watch='screen -S cam -c .screenrc.webcam'`
+    alias watch='screen -S cam -c .screenrc.webcam'
 
 ### Run the webcams using `watch`
 
