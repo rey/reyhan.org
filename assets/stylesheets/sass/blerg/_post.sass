@@ -1,0 +1,59 @@
+#post
+  h2
+    font-weight: 700
+  h2:first-child
+    margin-bottom: $gutter-width/2
+  time
+    margin-bottom: $gutter-width
+    display: block
+    color: #777
+  ul
+    li
+      list-style-type: disc
+  ol
+    li
+      list-style-type: decimal
+  p
+    img
+      width: 100%
+      height: auto
+    sup
+      font-size: 0.85em
+      vertical-align: super
+      a
+        padding: $gutter-width/3
+  q
+    font-style: italic
+  q:before
+    content: "“"
+  q:after
+    content: "”"
+      
+  blockquote
+    margin-left: $gutter-width
+    p
+      color: #333
+    ul
+      margin-left: 1em
+      list-style-position: inside
+  pre
+    margin: $gutter-width
+  code,
+  kbd
+    color: $green
+    font-family: "Monaco", "Courier", monospace
+  .footnotes
+    hr
+      height: 1px
+      border-width: 1px 0 0 0
+      width: 5em
+      margin: $gutter-width*3 0 $gutter-width*2 0
+    ol
+      li
+        font-size: 0.85em
+        p
+          display: inline
+          a
+            text-decoration: underline
+        a
+          text-decoration: none
