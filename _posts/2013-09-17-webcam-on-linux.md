@@ -76,7 +76,7 @@ Mine looks like this:
 When I was younger in the days of Mandrake Linux I did try and get various webcams working, to little success.
 
 [^2]:
-You could do loads of cool things with an archive, namely with ffmpeg.
+You can do loads of cool things with an archive! Shall experiment with [ffmpeg](http://www.ffmpeg.org).
 
 [^3]:
 On investigating webcam software that supported multiple webcams I discovered [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) which seems to be the go-to webcam software for Linux that does all the things. After a day of messing about it with I got it working but found it did way more than I needed it to. I'll stick my config on GitHub when I get the chance.
