@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to webcam on linux"
+title: "How to webcam on Linux"
 tags:
 - howto
 - linux
@@ -11,14 +11,12 @@ I wanted to keep an eye on a family pet when I was out the house so installed De
 ## My requirements
 
 1. A webcam that takes a photo on detecting motion.
-2. Archive is kept of past photo taken[^2].
+2. Keep archive of past photos[^2].
 3. The most recent photo is uploaded to my server.
 
 ## What I did
 
-After a bit of a Google about, I decided on a piece of a software called (funnily enough) [webcam](http://packages.debian.org/sid/webcam).
-
-It's quite straightforward and after poking the `.webcamrc` config file got it working nicely.
+After a bit of a Googling, I decided on a piece of a software called [webcam](http://packages.debian.org/sid/webcam). Here's how I got up and running:
 
 ### Install `webcam`
 
@@ -35,13 +33,16 @@ It's quite straightforward and after poking the `.webcamrc` config file got it w
 
 ## Run `webcam`
 
-Assuming all is working correctly you should have a local archive being kept at the `webcam` folder and the latest photo should be uploaded to `your.server.com/cam` on detecting a change.
+   cd ~/
+   webcam
+
+Assuming you don't get any errors your webcam should now be watching for changes. You can view the latest photo at `your.server.com/webcam/capture.jpg` and a local archive can be found at `~/webcam`.
 
 ## Running more than one webcam with er, `webcam`
 
-On investigating webcam software that supported multiple webcams I discovered [motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) which seems to be the go-to webcam software for Linux that does all the things. After a day of messing about it with I got it working but, believing the simplest solution to be the best, went back to using webcam. That said, I'll be sticking my motion config on GitHub for future reference.
+Now that's running you may want to use more than one webcam[^3], I initially struggled with this but eventually realised I could just duplicate the `webcam` processes.
 
-### Create one `.webcamrc` per webcam
+### Create a `.webcamrc` per webcam
 
 `touch .webcamrc.1 .webcamrc.2`
 
@@ -55,13 +56,18 @@ You'll want to change:
 
 ## Run the `webcam` processes with `screen`
 
+I wanted to keep these running `webcam` processes tidied away so decided to stick them in a `screen` session.
+
 ### Create a `.screenrc.webcam`
+
+`touch .screenrc.webcam`
 
 Mine looks like this:
 
-    screen -t "CAM1" sh -c "cd ~/ && webcam .webcamrc.1"
-    screen -t "CAM2" sh -c "cd ~/ && webcam .webcamrc.2"
-
+   # Create a new window called `CAM1` and start the `webcam` process using the `.webcamrc.1` config file
+   screen -t "CAM1" sh -c "cd ~/ && webcam .webcamrc.1"
+   # Create a new window called `CAM2` and start the `webcam` process using the `.webcamrc.2` config file
+   screen -t "CAM2" sh -c "cd ~/ && webcam .webcamrc.2"
 
 ### Create a new bash alias because handy
 
@@ -74,3 +80,6 @@ When I was much, much younger in the days of Mandrake Linux I did try and get va
 
 [^2]:
 You could do loads of cool things with an archive, namely with ffmpeg.
+
+[^3]:
+On investigating webcam software that supported multiple webcams I discovered [motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) which seems to be the go-to webcam software for Linux that does all the things. After a day of messing about it with I got it working but found it did way more than I needed it to. I'll stick my config on GitHub when I get the chance.
