@@ -39,38 +39,7 @@ After a bit of a Googling, I decided on a piece of a software called [webcam](ht
 
 Assuming you don't get any errors your webcam should now be watching for changes. You can view the latest photo at `your.server.com/webcam/capture.jpg` and a local archive can be found at `~/webcam`.
 
-## Running more than one webcam with er, `webcam`
-
-Now that's running you may want to use more than one webcam[^3], I initially struggled with this but eventually realised I could just duplicate the `webcam` processes.
-
-### Create a `.webcamrc` per webcam
-
-    touch .webcamrc.1 .webcamrc.2
-
-Edit the config files accordingly.
-
-## Run the `webcam` processes with `screen`
-
-I wanted to keep these running `webcam` processes tidied away so decided to stick them in a `screen` session.
-
-### Create a `.screenrc.webcam`
-
-    touch .screenrc.webcam
-
-Mine looks like this:
-
-    # Create a new window called `CAM1` and start the `webcam` process using the `.webcamrc.1` config file
-    screen -t "CAM1" sh -c "cd ~/ && webcam .webcamrc.1"
-    # Create a new window called `CAM2` and start the `webcam` process using the `.webcamrc.2` config file
-    screen -t "CAM2" sh -c "cd ~/ && webcam .webcamrc.2"
-
-### Create a new bash alias because handy
-
-    alias watch='screen -S cam -c .screenrc.webcam'
-
-### Launch the `screen` session
-
-    watch
+On investigating webcam software that supported multiple webcams I discovered [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) which seems to be the go-to webcam software for Linux that does all the things. After a day of messing about it with I got it working but found it did way more than I needed it to. I'll stick my config on GitHub when I get the chance. *EDIT* (1/10/13) My Motion config is now [on GitHub](https://github.com/rey/.motion).
 
 Things I need to add to this post: ssh-agent + ssh-add; how webcam resolution is dependant on whether you're using one USB bus for multiple webcams; managing your local archive with `cron`.
 
@@ -79,6 +48,3 @@ When I was younger in the days of Mandrake Linux I did try and get various webca
 
 [^2]:
 You can do loads of cool things with an archive! Shall experiment with [ffmpeg](http://www.ffmpeg.org).
-
-[^3]:
-On investigating webcam software that supported multiple webcams I discovered [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) which seems to be the go-to webcam software for Linux that does all the things. After a day of messing about it with I got it working but found it did way more than I needed it to. I'll stick my config on GitHub when I get the chance. *EDIT* (1/10/13) My Motion config is now [on GitHub](https://github.com/rey/.motion).
