@@ -8,7 +8,7 @@ tags:
 
 I wanted to keep an eye on a family pet when I was out the house so installed Debian on an old box and set about investigating the weird and wonderful world of webcams on Linux[^1].
 
-I stuck both [single](https://github.com/rey/.webcam/tree/master) and [multiple](https://github.com/rey/.webcam/tree/multi) webcam configs on GitHub.
+I stuck both [single](https://github.com/rey/webcam-single) and [multiple](https://github.com/rey/webcam-multi) webcam configs on GitHub.
 
 ## My requirements
 
