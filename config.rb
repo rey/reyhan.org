@@ -1,6 +1,5 @@
 require "susy"
 
-
 http_path = "/"
 css_dir = "assets/stylesheets/css/"
 sass_dir = "assets/stylesheets/sass/"
