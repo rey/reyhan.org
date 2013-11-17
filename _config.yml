@@ -9,4 +9,6 @@ tagline: wubwubwub
 author:
   name: Rey Dhuny
 
+timezone: Europe/London
+
 permalink: /:year/:month/:title.html
