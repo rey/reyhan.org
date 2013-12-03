@@ -8,11 +8,11 @@ tags:
 
 When using Vim (7.3) through tmux (1.8) I found that the Vim colour scheme looked strange. After much googling this was the solution that worked for me.
 
-Set the following to your `.vimrc`[^1]:
+Set the following in your `.vimrc`[^1]:
 
 `set term=screen-256color`
 
-Set the following to your `.tmux.conf`[^2]:
+Set the following in your `.tmux.conf`[^2]:
 
 `set -g default-terminal "screen-256color"`
 
