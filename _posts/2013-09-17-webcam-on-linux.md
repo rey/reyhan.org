@@ -20,7 +20,7 @@ I stuck both [single](https://github.com/rey/webcam-single) and [multiple](https
 
 After a bit of a Googling, I decided on a piece of a software called [webcam](http://packages.debian.org/sid/webcam). Here's how I got up and running:
 
-### Install `webcam`
+### Install webcam
 
     apt-get install webcam
 
@@ -33,7 +33,7 @@ After a bit of a Googling, I decided on a piece of a software called [webcam](ht
 <script src="https://gist.github.com/rey/6606468.js">
 </script>
 
-### Run `webcam`
+### Run webcam
 
     webcam
 
