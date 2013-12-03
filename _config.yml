@@ -1,4 +1,4 @@
-exclude: [".rvmrc", ".rbenv-version", "README", "Rakefile", "changelog.md", "sass_converter.rb", "Gemfile", "Gemfile.lock", ".tm_properties", "config.rb", "sass", "CNAME", "Procfile"]
+exclude: ["README.md","Gemfile", "Gemfile.lock", "config.rb", "sass", "CNAME", "Procfile"]
 
 live_url: http://reyhan.org
 
