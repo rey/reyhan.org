@@ -7,9 +7,9 @@
     margin-top: $gutter-width
     margin-bottom: $gutter-width
   time
-    margin-bottom: $gutter-width
-    display: block
     color: #777
+    display: block
+    margin-bottom: $gutter-width
   ul
     li
       list-style-type: disc
@@ -31,14 +31,14 @@
     content: "“"
   q:after
     content: "”"
-      
   blockquote
-    margin-left: $gutter-width
+    border-left: 1px dotted $grey
+    padding-left: $gutter-width
     p
       color: #333
     ul
-      margin-left: 1em
       list-style-position: inside
+      margin-left: 1em
   pre
     margin: $gutter-width
   code,
@@ -48,10 +48,10 @@
     line-height: $gutter-width*2
   .footnotes
     hr
-      height: 1px
       border-width: 1px 0 0 0
-      width: 5em
+      height: 1px
       margin: $gutter-width*3 0 $gutter-width*2 0
+      width: 5em
     ol
       li
         font-size: 0.85em

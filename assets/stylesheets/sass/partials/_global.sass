@@ -1,10 +1,10 @@
 body
-  font-family: $font-family
-  background-color: #f1efec
   color: $black
+  background-color: #f1efec
+  font-family: $font-family
   h2, h3, b, strong
-    font-weight: 700
     color: $brown
+    font-weight: 700
   h1, h2, h3, p, ul, ol, li
     margin-bottom: $gutter-width
   h2
@@ -21,33 +21,33 @@ body
       line-height: normal
       img, span
         display: inline-block
-        vertical-align: top
         margin-right: $gutter-width*1.25
+        vertical-align: top
       span
-        background-color: white
-        padding: $gutter-width/2 $gutter-width $gutter-width/2 $gutter-width
         +border-radius(10px)
-        position: relative
-        border-bottom: 1px solid $grey
         border-right: 1px solid $grey
+        border-bottom: 1px solid $grey
+        background-color: $white
         margin-right: 0
+        padding: $gutter-width/2 $gutter-width $gutter-width/2 $gutter-width
+        position: relative
       span:after
+        border-color: transparent $white
+        border-style: solid
+        border-width: 8px 13px 8px 0
+        bottom: auto
         content: ""
+        display: block
+        left: -13px
         position: absolute
         top: 10px
-        bottom: auto
-        left: -13px
-        border-width: 8px 13px 8px 0
-        border-style: solid
-        border-color: transparent $white
-        display: block
         width: 0
       span:hover
         border: none
     a
-      text-decoration: none
       color: $brown
       font-weight: 700
+      text-decoration: none
   #index,
   #post,
   aside
@@ -67,11 +67,11 @@ body
           color: $blue
         
   footer
-    clear: both
     border-top: 1px solid #ccc
+    clear: both
+    font-size: 0.85em
     padding-top: $gutter-width
     text-align: center
-    font-size: 0.85em
     
 .rey
   padding-top: $gutter-width
