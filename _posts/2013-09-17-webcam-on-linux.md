@@ -39,7 +39,9 @@ After a bit of a Googling, I decided on a piece of a software called [webcam](ht
 
 Assuming you don't get any errors your webcam should now be watching for changes. You can view the latest photo at `your.server.com/webcam/capture.jpg` and a local archive can be found at `~/webcam`.
 
-On investigating webcam software that supported multiple webcams I discovered [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) which seems to be the go-to webcam software for Linux that does all the things. After a day of messing about it with I got it working but found it did way more than I needed it to. I'll stick my config on GitHub when I get the chance. *EDIT* (1/10/13) My Motion config is now [on GitHub](https://github.com/rey/.motion).
+On investigating webcam software that supported multiple webcams I discovered [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) which seems to be the go-to webcam software for Linux that does all the things. After a day of messing about it with I got it working but found it did way more than I needed it to. I'll stick my config on GitHub when I get the chance.
+
+**EDIT** (1/10/13) My Motion config is now [on GitHub](https://github.com/rey/.motion).
 
 Things I need to add to this post: ssh-agent + ssh-add; how webcam resolution is dependant on whether you're using one USB bus for multiple webcams; managing your local archive with `cron`.
 
