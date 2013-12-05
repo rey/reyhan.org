@@ -36,7 +36,7 @@ This was very much trial and error[^3] but seems to work across both OS X and De
 >
 > What *should* happen, is that tmux reads the `$TERM` value of your terminal, sees `xterm256-color` (or similar) , thinks "Okay, that's a 256 colour terminal" and sets *its* `$TERM` to `screen256-color`. Vim running in tmux then reads tmux's `$TERM` and goes, "Cool, I looked `screen256-color` up and it has 256 colours - let me crack out the 256 colour palettes, like a colourful boss".
 >
-> **Terminal tells tmux its an Elephant, Tmux tells Vim its an Elephant, Vim gets the mahouts out and preps the palanquin.**
+> **Terminal tells tmux its an Elephant, tmux tells Vim its an Elephant, Vim gets the mahouts out and preps the palanquin.**
 >
 > Whats probably happening is that your `.bash_profile` is setting a different `$TERM` - for instance, `xterm-color`.
 >
