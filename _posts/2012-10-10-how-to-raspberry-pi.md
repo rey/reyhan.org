@@ -65,16 +65,3 @@ tags:
     git submodule update
     ln -s /home/rey/.vim/vimrc /root/.vimrc
     ln -s /home/rey/.vim/ /root/.vim
-
-### sudo vim /etc/network/interfaces
-
-`sudo vim /etc/network/interfaces`
-
-    auto lo
-    iface lo inet loopback
-    iface eth0 inet dhcp
-    allow-hotplug wlan0
-    auto wlan0
-    iface wlan0 inet dhcp
-    wpa-ssid "ssid"
-    wpa-psk "password"
