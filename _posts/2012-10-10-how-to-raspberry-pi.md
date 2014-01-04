@@ -42,39 +42,3 @@ tags:
 
 * `sudo apt-get update`
 * `sudo apt-get upgrade`
-
-### get bashrc
-
-    cd ~
-    git clone git@github.com:rey/dotfiles.git
-    ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-    ln -s ~/dotfiles/.bashrc ~/.bashrc
-    ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-    ln -s ~/dotfiles/.gitconfig_global ~/.gitconfig_global
-    cd ~/dotfiles
-    git submodule init
-    git submodule update
-
-### get vimrc
-
-    cd ~
-    git clone git@github.com:rey/.vim.git ~/.vim
-    ln -s ~/.vim/vimrc ~/.vimrc
-    cd ~/.vim
-    git submodule init
-    git submodule update
-    ln -s /home/rey/.vim/vimrc /root/.vimrc
-    ln -s /home/rey/.vim/ /root/.vim
-
-### sudo vim /etc/network/interfaces
-
-`sudo vim /etc/network/interfaces`
-
-    auto lo
-    iface lo inet loopback
-    iface eth0 inet dhcp
-    allow-hotplug wlan0
-    auto wlan0
-    iface wlan0 inet dhcp
-    wpa-ssid "ssid"
-    wpa-psk "password"
