@@ -4,3 +4,5 @@ rvm:
 before_script:
   - rake jekyll detach=true
   - sleep 3
+script:
+  - rake cucumber
