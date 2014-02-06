@@ -1,4 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-script: jekyll build
+before_script:
+  - rake jekyll detach=true
+  - sleep 3
