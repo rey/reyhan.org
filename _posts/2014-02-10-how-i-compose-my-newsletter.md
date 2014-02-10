@@ -34,7 +34,7 @@ Four weeks ago I decided to start putting out my own weekly newsletter. It's cal
 ### Good things!
 
 * Jekyll provides a handy way of generating only valid, essential HTML markup for your TinyLetter newsletter. In my experience WYSIWYG editors have a bad habit of creating surplus and spurious HTML tags.
-* Own your platform: if anything happens to Tinyletter you have your own archive of newsletters, hosted on your own domain.
+* Own your platform: if anything happens to TinyLetter you have your own archive of newsletters, hosted on your own domain.
 
 [^1]:
 I keep my draft newsletter in Simplenote as I make heavy use of the Simplenote web, iPad and iPhone apps. It's readily available wherever I'm consuming internet.
