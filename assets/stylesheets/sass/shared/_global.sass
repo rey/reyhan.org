@@ -2,91 +2,33 @@ body
   color: $black
   background-color: #f1efec
   font-family: $font-family
+  padding: $gutter
   h2, h3, b, strong
     color: $brown
     font-weight: 700
   h1, h2, h3, p, ul, ol, li
-    margin-bottom: $gutter-width
-  h2
-    font-size: $base-font-size*1.15
-  p, ul, ol
-    line-height: $base-line-height
+    margin-bottom: $gutter
   a
     color: $blue
   i, em
     font-style: italic
-  header
-    margin-bottom: $gutter-width*2
-    h1
-      line-height: normal
-      img, span
-        display: inline-block
-        margin-right: $gutter-width*1.25
-        vertical-align: top
-      span
-        +border-radius(10px)
-        border-right: 1px solid $grey
-        border-bottom: 1px solid $grey
-        background-color: $white
-        margin-right: 0
-        padding: $gutter-width/2 $gutter-width $gutter-width/2 $gutter-width
-        position: relative
-      span:after
-        border-color: transparent $white
-        border-style: solid
-        border-width: 8px 13px 8px 0
-        bottom: auto
-        content: ""
-        display: block
-        left: -13px
-        position: absolute
-        top: 10px
-        width: 0
-      span:hover
-        border: none
-    a
-      color: $brown
-      font-weight: 700
-      text-decoration: none
-  #index,
-  #post,
-  aside
-    font-size: $base-font-size*0.85
-  aside
-    ul
-      +column-count(2)
-      li
-        font-size: 0.85em
-    ul.elsewhere
-      li
-        a
-          color: $brown
-    ul.elsewhere:hover
-      li
-        a
-          color: $blue
-    div:last-child
-      a
-        color: #f6c
-  footer
-    border-top: 1px solid #ccc
-    clear: both
-    font-size: 0.85em
-    padding-top: $gutter-width
-    text-align: center
-    
-.rey
-  padding-top: $gutter-width
-  +container($total-columns)
 
-+at-breakpoint($desktop)
-  header
-    h1
-      font-size: $base-font-size*1.25
-  #index,
-  #post,
-  #archive
-    +span-columns(8)
-  aside
-    +prefix(1)
-    +span-columns(3 omega)
+// layout
+.reyhan
+  margin: 0 auto
+  width: 980px
+
+section,
+article#post,
+aside
+  display: inline-block
+  vertical-align: top
+
+section,
+article#post
+  //+red
+  margin-right: 80px
+  width: 625px
+aside
+  //+red
+  width: 225px
