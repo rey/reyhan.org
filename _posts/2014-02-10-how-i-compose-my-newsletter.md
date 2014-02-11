@@ -8,7 +8,7 @@ tags:
 
 Four weeks ago I decided to start putting out my own weekly newsletter. It's called [zzmag](http://zzmag.com), full of internet and delivered every Monday. Some folk have asked how I go about publishing it so decided to jot down some notes.
 
-### Prerequisites
+### Prerequisites
 
 * A text file for your work-in-progress newsletter. I use [Simplenote](http://simplenote.com)[^1].
 * A [Jekyll](http://jekyllrb.com)-powered website to host your newsletter archive and handily convert Markdown to HTML.

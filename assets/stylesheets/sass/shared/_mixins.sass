@@ -1,0 +1,7 @@
+@mixin bp($point)
+  @if $point == max
+    @media (max-width: $max-width)
+      @content
+  //@else if $point == small
+  //  @media (max-width: $small-width)
+  //    @content

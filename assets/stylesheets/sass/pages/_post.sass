@@ -1,32 +1,35 @@
 #post
-  h2, h3
-    margin-top: $gutter-width
-    margin-bottom: $gutter-width
-  h2
-    font-weight: 700
-  h2:first-child
-    margin-bottom: $gutter-width/2
-  h3
-    margin-top: $gutter-width*1.5
+  font-size: 14px
   time
     color: #777
     display: block
-    margin-bottom: $gutter-width
-  ul
-    li
-      list-style-type: disc
-  ol
-    li
-      list-style-type: decimal
+    margin-bottom: $gutter
+
+  // paragraphs
   p
-    img
-      width: 100%
-      height: auto
-  sup
-    font-size: 0.85em
-    vertical-align: super
-    a
-      padding: $gutter-width/3
+    line-height: 20px
+
+  // post title
+  h2
+    font-size: 16px
+    margin-bottom: $gutter/4
+
+  // subheadings
+  h3
+
+  // lists
+  ul,
+  ol
+    line-height: 20px
+    list-style-position: outside
+    +bp(max)
+      list-style-position: inside
+  ul
+    list-style-type: disc
+  ol
+    list-style-type: decimal
+
+  // quotes
   q
     font-style: italic
   q:before
@@ -35,24 +38,41 @@
     content: "”"
   blockquote
     border-left: 1px dotted $grey
-    padding-left: $gutter-width
+    font-size: 13px
+    padding-left: $gutter
     p
       color: #333
-    ul
-      list-style-position: inside
-      margin-left: 1em
+    ol, ul
+      margin-left: $gutter
+
+  // code
+  pre, kbd, code
+    color: darkcyan
+    font-family: $family-monospace
+    font-size: 12px
   pre
-    margin: $gutter-width
-  code,
-  kbd
-    color: $green
-    font-family: "Monaco", "Courier", monospace
-    line-height: $gutter-width*2
+    line-height: 20px
+    margin-bottom: 20px
+  p, li
+    code
+      font-size: 14px
+
+  // images
+  img
+    width: 100%
+    height: auto
+
+  //footnotes
+  sup
+    font-size: 10px
+    vertical-align: super
+    a
+      padding: $gutter/4
   .footnotes
     hr
       border-width: 1px 0 0 0
       height: 1px
-      margin: $gutter-width*3 0 $gutter-width*2 0
+      margin: $gutter*3 0 $gutter*2 0
       width: 5em
     ol
       li
