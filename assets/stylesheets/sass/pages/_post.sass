@@ -1,0 +1,85 @@
+#post
+  font-size: 14px
+  time
+    color: #777
+    display: block
+    margin-bottom: $gutter
+
+  // paragraphs
+  p
+    line-height: 20px
+
+  // post title
+  h2
+    font-size: 16px
+    margin-bottom: $gutter/4
+
+  // subheadings
+  h3
+
+  // lists
+  ul,
+  ol
+    line-height: 20px
+    list-style-position: outside
+    +bp(max)
+      list-style-position: inside
+  ul
+    list-style-type: disc
+  ol
+    list-style-type: decimal
+
+  // quotes
+  q
+    font-style: italic
+  q:before
+    content: "“"
+  q:after
+    content: "”"
+  blockquote
+    border-left: 1px dotted $grey
+    font-size: 13px
+    padding-left: $gutter
+    p
+      color: #333
+    ol, ul
+      margin-left: $gutter
+
+  // code
+  pre, kbd, code
+    color: darkcyan
+    font-family: $family-monospace
+    font-size: 12px
+  pre
+    line-height: 20px
+    margin-bottom: 20px
+  p, li
+    code
+      font-size: 14px
+
+  // images
+  img
+    width: 100%
+    height: auto
+
+  //footnotes
+  sup
+    font-size: 10px
+    vertical-align: super
+    a
+      padding: $gutter/4
+  .footnotes
+    hr
+      border-width: 1px 0 0 0
+      height: 1px
+      margin: $gutter*3 0 $gutter*2 0
+      width: 5em
+    ol
+      li
+        font-size: 0.85em
+        p
+          display: inline
+          a
+            text-decoration: underline
+        a
+          text-decoration: none

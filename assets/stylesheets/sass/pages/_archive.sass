@@ -1,0 +1,21 @@
+#archive
+  font-size: 14px
+  ul
+    margin-left: $gutter/2
+    li
+      time
+        display: inline-block
+        font-family: $family-monospace
+        font-size: 10px
+        padding-right: $gutter/2
+      time:after
+        content: "•"
+        font-size: 8px
+        padding-left: $gutter/2
+  .this
+    +border-radius($gutter/4)
+    background-color: #ffffcc
+    margin-left: 0
+    padding: $gutter/2
+    li:last-child
+      margin-bottom: 0

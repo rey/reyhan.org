@@ -1,0 +1,37 @@
+header
+  margin-bottom: $gutter*2
+  h1
+    line-height: normal
+    img, span
+      display: inline-block
+      margin-right: $gutter*1.25
+      vertical-align: top
+    span
+      +border-radius(10px)
+      border-right: 1px solid $grey
+      border-bottom: 1px solid $grey
+      background-color: $white
+      font-size: 19px
+      margin-right: 0
+      padding: $gutter/2 $gutter $gutter/2 $gutter
+      position: relative
+      +bp(max)
+        font-size: 14px
+    span:after
+      border-color: transparent $white
+      border-style: solid
+      border-width: 8px 13px 8px 0
+      bottom: auto
+      content: ""
+      display: block
+      left: -13px
+      position: absolute
+      top: 10px
+      width: 0
+    span:hover
+      border: none
+  a
+    color: $brown
+    display: inline-block
+    font-weight: 700
+    text-decoration: none
