@@ -108,7 +108,7 @@ h3 with code after
 ### Bacon ipsum
 
 ```
-Bacon ipsum dolor sit amet shankle beef ribs boudin, bacon meatball bresaola spare ribs salami pancetta. Sirloin kevin pancetta kielbasa. Kielbasa jerky leberkas hamburger short loin tongue. Meatloaf hamburger bacon drumstick cow. Bacon beef ribs shoulder shank boudin.
+Bacon ipsum dolor sit amet shankle beef ribs boudin, bacon meatball bresaola spare ribs salami pancetta.
 ```
 
 [^1]:
