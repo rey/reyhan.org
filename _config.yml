@@ -13,6 +13,4 @@ timezone: Europe/London
 
 permalink: /:year/:month/:title.html
 
-markdown: kramdown
-
 encoding  : utf-8
