@@ -30,5 +30,4 @@ A thousand times yes. I'm reminded of [Simon Willison's notes on a talk Tom Coat
 
 Furthermore, a page's `<title>` should be *a reply* to it's URL.
 
-[^1]:
-PDF of Coates' slides from Future of Web Apps '06: [Native to a Web of Data](http://www.plasticbag.org/files/native/native_to_a_web_of_data.pdf).
+[^1]: PDF of Coates' slides from Future of Web Apps '06: [Native to a Web of Data](http://www.plasticbag.org/files/native/native_to_a_web_of_data.pdf).

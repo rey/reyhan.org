@@ -45,8 +45,6 @@ On investigating webcam software that supported multiple webcams I discovered [M
 
 Things I need to add to this post: ssh-agent + ssh-add; how webcam resolution is dependant on whether you're using one USB bus for multiple webcams; managing your local archive with `cron`.
 
-[^1]:
-When I was younger in the days of Mandrake Linux I did try and get various webcams working, to little success.
+[^1]: When I was younger in the days of Mandrake Linux I did try and get various webcams working, to little success.
 
-[^2]:
-You can do loads of cool things with an archive! Shall experiment with [ffmpeg](http://www.ffmpeg.org).
+[^2]: You can do loads of cool things with an archive! Shall experiment with [ffmpeg](http://www.ffmpeg.org).
