@@ -62,11 +62,8 @@ This was very much trial and error[^3] but seems to work across both OS X and De
 >
 > **TL;DR** `echo $TERM` in a new terminal. If it doesn't say `xterm256-color`, go look at your `.bash_profile` and wipe out any evil `export TERM=`.
 
-[^1]:
-My [`.vimrc` is on GitHub](https://github.com/rey/.vim/blob/master/vimrc#L8)
+[^1]: My [`.vimrc` is on GitHub](https://github.com/rey/.vim/blob/master/vimrc#L8)
 
-[^2]:
-My [`.tmux.conf` is on GitHub](https://github.com/rey/.tmux/blob/master/tmuxrc#L2)
+[^2]: My [`.tmux.conf` is on GitHub](https://github.com/rey/.tmux/blob/master/tmuxrc#L2)
 
-[^3]:
-This thread on Stack Overflow was useful: [Vim: Difference between t_Co=256 and term=xterm-256color in conjunction with TMUX](http://stackoverflow.com/questions/15375992/vim-difference-between-t-co-256-and-term-xterm-256color-in-conjunction-with-tmu)
+[^3]: This thread on Stack Overflow was useful: [Vim: Difference between t_Co=256 and term=xterm-256color in conjunction with TMUX](http://stackoverflow.com/questions/15375992/vim-difference-between-t-co-256-and-term-xterm-256color-in-conjunction-with-tmu)

@@ -27,7 +27,5 @@ Here are a bunch of URLs that I would expect to redirect to their respective loc
 
 I appreciate the above sounds like common sense but you'd be amazed at the amount of websites that don't do this[^2].
 
-[^1]:
-You could argue that you should be using these common URLs to start with but, you know.
-[^2]:
-It's at this point I try to play _click-the-link_ when the webpage has infinite scrolling &mdash; the rage.
+[^1]: You could argue that you should be using these common URLs to start with but, you know.
+[^2]: It's at this point I try to play _click-the-link_ when the webpage has infinite scrolling &mdash; the rage.
