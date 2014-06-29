@@ -24,6 +24,6 @@ encoding  : utf-8
 
 markdown  : kramdown
 
-port      : 5555
+port      : 7777
 
 timezone  : Europe/London
