@@ -1,18 +1,29 @@
-exclude: ["README.md","Gemfile", "Gemfile.lock", "config.rb", "sass", "CNAME", "Procfile"]
+exclude: [
+  ".rvmrc",
+  ".rbenv-version",
+  "config.rb",
+  "CNAME",
+  "Procfile",
+  "README",
+  "Gemfile",
+  "Gemfile.lock",
+  "sass",
+  "Vagrantfile",
+  "bootstrap.sh",
+  "vendor"
+]
 
-live_url: http://reyhan.org
+title     : This is my homepage
+url       : http://reyhan.org
+tagline   : wubwubwub
+author    : Rey Dhuny
 
-title: This is my homepage
-
-tagline: wubwubwub
-
-author:
-  name: Rey Dhuny
-
-timezone: Europe/London
-
-permalink: /:year/:month/:title.html
+permalink : /:year/:month/:title.html
 
 encoding  : utf-8
 
-markdown: kramdown
+markdown  : kramdown
+
+port      : 5555
+
+timezone  : Europe/London
