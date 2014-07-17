@@ -10,7 +10,7 @@ _When I worked at [Aframe](http://aframe.com), [@mikesten](http://twitter.com/mi
 
 ### Preamble
 
-1. This is for setting up Irssi on a Mac. You mileage may vary.
+1. This is for setting up Irssi on a Mac. Your mileage may vary.
 2. Make sure you have the latest version of [Xcode](https://itunes.apple.com/gb/app/xcode/id497799835?mt=12) and have the Command Line Tools installed
 3. Be using [Homebrew](http://mxcl.github.com/homebrew/), the brilliant package manager for OS X
 

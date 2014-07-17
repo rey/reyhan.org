@@ -10,13 +10,13 @@ I wanted to keep an eye on a family pet when I was out the house so installed De
 
 I stuck both [single](https://github.com/rey/webcam-single) and [multiple](https://github.com/rey/webcam-multi) webcam configs on GitHub.
 
-## My requirements
+### My requirements
 
 1. A webcam that takes a photo on detecting motion.
 2. Keep archive of past photos[^2].
 3. The most recent photo is uploaded to my server.
 
-## What I did
+### What I did
 
 After a bit of a Googling, I decided on a piece of a software called [webcam](http://packages.debian.org/sid/webcam). Here's how I got up and running:
 
@@ -33,7 +33,7 @@ After a bit of a Googling, I decided on a piece of a software called [webcam](ht
 <script src="https://gist.github.com/rey/6606468.js">
 </script>
 
-### Run webcam
+### Run webcam
 
     webcam
 
