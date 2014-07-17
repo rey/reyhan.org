@@ -3,8 +3,6 @@ body
   background-color: #f1efec
   font-family: $family-default
   padding: $gutter
-  +bp(max)
-    padding: $gutter/2
   h2, h3, b, strong
     color: $brown
     font-weight: 700
@@ -19,8 +17,6 @@ body
 .reyhan
   margin: 0 auto
   width: $max-width
-  +bp(max)
-    width: 100%
 
 section,
 article#post,
@@ -30,15 +26,7 @@ aside
 
 section,
 article#post
-  //+red
   margin-right: 80px
   width: 625px
-  +bp(max)
-    margin-right: 0
-    width: 100%
 aside
   width: 225px
-  +bp(max)
-    border-top: 1px solid $grey
-    padding-top: $gutter
-    width: 100%
