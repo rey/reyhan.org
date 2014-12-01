@@ -5,6 +5,8 @@ tags:
 - zzmag
 ---
 
+**EDIT** (02/09/14): This is no longer the case -- I should write why, soon!
+
 I had some time yesterday to make some changes to [zzmag.com](http://zzmag.com).
 
 ### New RSS feed
