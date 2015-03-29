@@ -93,6 +93,7 @@ Create a `gnuplot.conf` file for `gnuplot`:
     set xdata time
     set timefmt "%H:%M:%S"
     set grid
+    set key left
     plot "temperature_log" using 1:2 title "Temperature" with lines
 
 Plot the graph
