@@ -44,17 +44,14 @@ and is pretty hacky but seems to work okay. ONWARDS!
     # Plug in the temperature sensor + test it works
     sudo ./pcsensor
 
-    # Allow `./pcsensor` to be run without root
+    # Allow `pcsensor` to be run without root
     sudo cp ~/usb-thermometer/99-tempsensor.rules /etc/udev/rules.d/.
 
-    # Reboot
-    sudo reboot
-
-    # Test as a grub user
-    cd usb-thermometer && ./pcsensor
-    
     # Copy to `/usr/local/bin`
     sudo cp pcsensor /usr/local/bin/
+
+    # Test as a grub user
+    pcsensor
 
 ### Create a data file
 
@@ -62,16 +59,16 @@ We want to create a data file that can be used to build a graph. I imagine
 `gnuplot` could probably work from the unsanitised `./pcsensor` output but since
 I've never used `gnuplot` before, coupled with the fact that I'm impatient:
 
-    # Get `./pcsensor` output and throw it in a temporary file
-    /usr/local/bin/pcsensor -c >> ~/temp.tmp
+    # Get `pcsensor` output and throw it in a temporary file
+    pcsensor -c >> ~/temp.tmp
 
     # Delete date as we only want the temperature for the last 24 hours
     sed -i 's/^[^ ]* //' ~/temp.tmp 
 
-    # Delete word `Temperature` from `./pcsensor` output
+    # Delete word `Temperature` from `pcsensor` output
     sed -i 's/\<Temperature\>//g' ~/temp.tmp
 
-    # Delete letter `C` from `./pcsensor` output
+    # Delete letter `C` from `pcsensor` output
     sed -i 's/.$//' ~/temp.tmp
 
     # Copy the sanitised data to `temperature_log`
@@ -110,15 +107,15 @@ Plot the graph
     # Get the current temperature and create a handy graph
 
     # Get `./pcsensor` output and throw it in a temporary file
-    /usr/local/bin/pcsensor -c >> ~/temp.tmp
+    pcsensor -c >> ~/temp.tmp
 
     # Delete date as we only want the temperature for the last 24 hours
     sed -i 's/^[^ ]* //' ~/temp.tmp 
 
-    # Delete word `Temperature` from `./pcsensor` output
+    # Delete word `Temperature` from `pcsensor` output
     sed -i 's/\<Temperature\>//g' ~/temp.tmp
 
-    # Delete letter `C` from `./pcsensor` output
+    # Delete letter `C` from `pcsensor` output
     sed -i 's/.$//' ~/temp.tmp
 
     # Copy the sanitised data to `temperature_log`
