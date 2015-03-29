@@ -56,7 +56,7 @@ and is pretty hacky but seems to work okay. ONWARDS!
 ### Create a data file
 
 We want to create a data file that can be used to build a graph. I imagine
-`gnuplot` could probably work from the unsanitised `./pcsensor` output but since
+`gnuplot` could probably work from the unsanitised `pcsensor` output but since
 I've never used `gnuplot` before, coupled with the fact that I'm impatient:
 
     # Get `pcsensor` output and throw it in a temporary file
