@@ -52,6 +52,9 @@ and is pretty hacky but seems to work okay. ONWARDS!
 
     # Test as a grub user
     cd usb-thermometer && ./pcsensor
+    
+    # Copy to `/usr/local/bin`
+    sudo cp pcsensor /usr/local/bin/
 
 ### Create a data file
 
@@ -60,7 +63,7 @@ We want to create a data file that can be used to build a graph. I imagine
 I've never used `gnuplot` before, coupled with the fact that I'm impatient:
 
     # Get `./pcsensor` output and throw it in a temporary file
-    cd ~/usb-thermometer && ./pcsensor -c >> ~/temp.tmp
+    /usr/local/bin/pcsensor -c >> ~/temp.tmp
 
     # Delete date as we only want the temperature for the last 24 hours
     sed -i 's/^[^ ]* //' ~/temp.tmp 
@@ -107,7 +110,7 @@ Plot the graph
     # Get the current temperature and create a handy graph
 
     # Get `./pcsensor` output and throw it in a temporary file
-    cd ~/usb-thermometer && ./pcsensor -c >> ~/temp.tmp && cd ~
+    /usr/local/bin/pcsensor -c >> ~/temp.tmp
 
     # Delete date as we only want the temperature for the last 24 hours
     sed -i 's/^[^ ]* //' ~/temp.tmp 
