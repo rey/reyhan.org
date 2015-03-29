@@ -8,11 +8,15 @@ tags:
 ---
 
 Late November 2013 I bought [a cheap USB temperature sensor for
-&pound;8.69](http://www.amazon.co.uk/gp/product/B009RETJIO) and promptly put it
-in a drawer and forgot about it.
+&pound;8.69](http://www.amazon.co.uk/gp/product/B009RETJIO) and put it in a
+drawer and forgot about it.
 
-Having rediscovered it yesterday I decided I'd see if I could get it logging
-some room temperatures from a [Raspberry Pi
+![gnuplot graph of temperature against
+time](/assets/images/posts/temperature.png "gnuplot graph of temperature against
+time")
+
+Having rediscovered it yesterday I decided to see if I could get it logging some
+temperatures running on a [Raspberry Pi
 B+](http://www.raspberrypi.org/products/model-b-plus/).
 
 From what I've read this afternoon, there's a bunch of different variations of
@@ -20,8 +24,8 @@ this temperature sensor, named `TEMPer1`. The output from running `lsusb` was:
 
     Bus 001 Device 008: ID 0c45:7401 Microdia
 
-The following is cribbed from a bunch of commands that I wrote whilst getting
-this working and is pretty hacky but seems to work okay.
+The following is cribbed from the commands I wrote whilst getting this running
+and is pretty hacky but seems to work okay. ONWARDS!
 
 ### Get the drivers for the temperature sensor
 
@@ -51,9 +55,9 @@ this working and is pretty hacky but seems to work okay.
 
 ### Create a data file
 
-We want to create a datafile that `gnuplot` can use. I imagine `gnuplot` could
-probably work from the unsanitised `./pcsensor` output but since I've never used
-`gnuplot` before and I'm impatient:
+We want to create a data file that can be used to build a graph. I imagine
+`gnuplot` could probably work from the unsanitised `./pcsensor` output but since
+I've never used `gnuplot` before, coupled with the fact that I'm impatient:
 
     # Get `./pcsensor` output and throw it in a temporary file
     cd ~/usb-thermometer && ./pcsensor -c >> ~/temp.tmp
