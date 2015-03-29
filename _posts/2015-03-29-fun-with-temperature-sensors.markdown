@@ -91,6 +91,7 @@ Create a `gnuplot.conf` file for `gnuplot`:
     set ylabel "Temperature"
     set xlabel "Time"
     set xdata time
+    set grid
     set timefmt "%H:%M:%S"
     plot "temperature_log" using 1:2 title "Temperature" with lines
 
