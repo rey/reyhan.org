@@ -86,7 +86,9 @@ Create a `gnuplot.conf` file for `gnuplot`:
     set title "Room Temperature"
     set ylabel "Temperature"
     set xlabel "Time"
-    plot "temperature_log" with lines
+    set xdata time
+    set timefmt "%H:%M:%S"
+    plot "temperature_log" using 1:2 title "Temperature" with lines
 
 Plot the graph
 
