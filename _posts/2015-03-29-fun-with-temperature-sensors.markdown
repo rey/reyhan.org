@@ -106,7 +106,7 @@ Plot the graph
     #
     # Get the current temperature and create a handy graph
 
-    # Get `./pcsensor` output and throw it in a temporary file
+    # Get `pcsensor` output and throw it in a temporary file
     pcsensor -c >> ~/temp.tmp
 
     # Delete date as we only want the temperature for the last 24 hours
