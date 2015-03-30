@@ -91,6 +91,7 @@ Create a `gnuplot.conf` file for `gnuplot`:
     set ylabel "Temperature"
     set xlabel "Time"
     set xdata time
+    set xtics rotate
     set timefmt "%H:%M:%S"
     set grid
     set key left
