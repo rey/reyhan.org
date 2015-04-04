@@ -30,7 +30,7 @@ and is pretty hacky but seems to work okay. ONWARDS!
 ### Get the drivers for the temperature sensor
 
     # Get the `libusb-dev` library
-    apt-get install libusb-dev
+    sudo apt-get install libusb-dev
 
     # Clone the driver
     cd ~ && git clone https://github.com/petechap/usb-thermometer.git
