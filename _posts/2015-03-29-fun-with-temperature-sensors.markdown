@@ -147,7 +147,7 @@ seems like a nice number:
     */15 * * * * source /home/rey/log_temperature.sh
 
 As I'm only interested in the temperature for the last 24 hours I'll also delete
-the `temperature_log file at 00:00:
+the `temperature_log.txt` file at 00:00:
 
     # remove `temperature_log` file every 24 hours at midnight
-    0 0 * * * rm /home/rey/temperature_log
+    0 0 * * * rm /home/rey/temperature_log.txt
