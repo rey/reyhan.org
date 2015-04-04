@@ -70,6 +70,9 @@ I've never used `gnuplot` before, coupled with the fact that I'm impatient:
 
     # Delete letter `C` from `pcsensor` output
     sed -i 's/.$//' ~/temp.tmp
+    
+    # Replace spaces with commas `,`
+    sed -i 's/ \{1,\}/,/g' ~/temp.tmp
 
     # Copy the sanitised data to `temperature_log`
     cat ~/temp.tmp >> ~/temperature_log
