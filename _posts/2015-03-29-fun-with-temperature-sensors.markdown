@@ -89,9 +89,10 @@ Install [gnuplot](http://www.gnuplot.info):
 Create a `gnuplot.conf` file for `gnuplot`:
 
     set terminal png
+    set datafile separator ","
     set output "temperature_graph.png"
-    set title "Room Temperature"
-    set ylabel "Temperature"
+    set timestamp
+    set ylabel "Temperature (°C)"¬
     set xlabel "Time"
     set xdata time
     set xtics rotate
