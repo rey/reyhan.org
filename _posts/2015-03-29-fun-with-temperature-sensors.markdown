@@ -74,7 +74,7 @@ I've never used `gnuplot` before, coupled with the fact that I'm impatient:
     # Replace spaces with commas `,`
     sed -i 's/ \{1,\}/,/g' ~/temp.tmp
 
-    # Copy the sanitised data to `temperature_log`
+    # Copy the sanitised data to `temperature_log.txt`
     cat ~/temp.tmp >> ~/temperature_log.txt
 
     # Remove the `temp.tmp` file
@@ -97,9 +97,10 @@ Create a `gnuplot.conf` file for `gnuplot`:
     set xdata time
     set xtics rotate
     set timefmt "%H:%M:%S"
+    set format x "%H:%M"
     set grid
-    set key left
-    plot "temperature_log.txt" using 1:2 title "Temperature" with lines
+    set key off
+    plot "temperature_log.txt" using 1:2 with lines lt rgb "#ff66cc"
 
 Plot the graph
 
@@ -125,8 +126,11 @@ Plot the graph
     # Delete letter `C` from `pcsensor` output
     sed -i 's/.$//' ~/temp.tmp
 
-    # Copy the sanitised data to `temperature_log`
-    cat ~/temp.tmp >> ~/temperature_log
+    # Replace spaces with commas `,`
+    sed -i 's/ \{1,\}/,/g' ~/temp.tmp
+
+    # Copy the sanitised data to `temperature_log.txt`
+    cat ~/temp.tmp >> ~/temperature_log.txt
 
     # Remove the `temp.tmp` file
     rm ~/temp.tmp
