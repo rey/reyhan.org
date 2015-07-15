@@ -16,6 +16,14 @@ Save your stash with a handy comment
 See a list of changes the next `git push` will make
 
 	git diff --name-status origin/your-branch
+	
+Unstage local commits
+
+    git reset --soft HEAD^
+  
+Amend most recent commit
+
+    git commit --amend
 
 Delete a Local branch
 
