@@ -4,7 +4,7 @@ rvm:
 script:
 - bundle exec sass -c assets/sass/style.sass
 - bundle exec jekyll build
-- bundle exec htmlproof _site --check-html --verbose
+- bundle exec htmlproof _site --check-html --disable-external --verbose
 # branch whitelist, only for GitHub Pages
 # branches:
 # only:
