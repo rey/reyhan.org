@@ -1,2 +1,2 @@
 jekyll:  jekyll serve --watch
-compass: compass watch
+sass: sass --watch assets/sass:assets/css
