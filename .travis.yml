@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 script:
-- bundle exec sass -c assets/sass/style.scss
+- bundle exec sass -c assets/sass/style.sass
 - bundle exec jekyll build
 - bundle exec htmlproof _site --check-html --verbose
 # branch whitelist, only for GitHub Pages
