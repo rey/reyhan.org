@@ -10,20 +10,16 @@ exclude: [
   "sass",
   "Vagrantfile",
   "bootstrap.sh",
-  "vendor"
+  "vendor",
+  ".travis.yml"
 ]
 
 title     : This is my homepage
 url       : http://reyhan.org
 tagline   : wubwubwub
 author    : Rey Dhuny
-
 permalink : /:year/:month/:title.html
-
 encoding  : utf-8
-
 markdown  : kramdown
-
 port      : 7777
-
 timezone  : Europe/London

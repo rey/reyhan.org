@@ -1,13 +1,4 @@
-Thumbs.db
 .DS_Store
-
 !.gitkeep
-
-.rbenv-version
-.rvmrc
-
-.tm_properties
-
 _site
-
 .sass-cache
