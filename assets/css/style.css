@@ -164,6 +164,18 @@ aside {
     list-style-type: disc; }
   #post ol {
     list-style-type: decimal; }
+  #post ul ul,
+  #post ul ol,
+  #post ol ul,
+  #post ol ol {
+    margin-top: 20px;
+    margin-left: 20px; }
+  #post ul ol,
+  #post ol ol {
+    list-style-type: lower-alpha; }
+    #post ul ol ol,
+    #post ol ol ol {
+      list-style-type: lower-roman; }
   #post q {
     font-style: italic; }
   #post q:before {
