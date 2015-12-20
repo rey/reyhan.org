@@ -7,15 +7,14 @@ tags:
 
 ### About
 
-I wrote a handy bash script that creates an archive of all the tweets I've
-posted in the week since the previous backup afterwhich it deletes them from
-Twitter's servers.
+I wrote a handy bash script that creates an archive of all the tweets posted
+then deletes them from Twitter's servers. It's meant to be run by cron weekly.
 
 ### Prerequisites
 
 1. Install [t](https://github.com/sferik/t), an awkwardly named command-line tool for Twitter.
-2. You'll want to add something like the following to your crontab if you
-   planning on running it on a schedule:
+2. Add something like the following to your crontab if you planning on running
+   it on a schedule:
 
         SHELL=/bin/bash
         # Run `twttr_autodestructor.sh`at 11:45 every Sunday
@@ -23,10 +22,8 @@ Twitter's servers.
 
 ### Script
 
-I've put this in my home directory, but you can put it wherever you want.
-
-You'll need to set the `BOX_USER`, `TWITTER_USER` and `BACKUP_FOLDER` variables
-(and don't forget to create the path to the `BACKUP_FOLDER` eg. `mkdir
+Set the `BOX_USER`, `TWITTER_USER` and `BACKUP_FOLDER` variables (and don't
+forget to create the path to the `BACKUP_FOLDER` eg. `mkdir
 /home/kanye/archive_kanyewest`).
 
     #!/bin/bash
@@ -77,6 +74,6 @@ You'll need to set the `BOX_USER`, `TWITTER_USER` and `BACKUP_FOLDER` variables
     # Delete workspace directory
     cd ~ && rm -rf /tmp/twttr_autodestructor
 
-### Extending `twttr_autodestructor.sh`
+### Extending
 
 I intend to throw my updates into GitHub, who do some [nice formatting with `.csv` files](https://help.github.com/articles/rendering-csv-and-tsv-data).
