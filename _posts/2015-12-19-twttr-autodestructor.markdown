@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to create your own Twitter archive"
+title: "How to create (and destroy) your own Twitter archive"
 tags:
 - twttr
 ---
