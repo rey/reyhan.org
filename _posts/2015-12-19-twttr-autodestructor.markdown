@@ -7,31 +7,40 @@ tags:
 
 ### About
 
-`twttr_autodestructor.sh` is a handy bash script that shifts my Twitter archive
-from Twitter's servers to my own.
-
-It save any tweets that have been created since the last backup locally then
-then deletes said tweets from Twitter's servers.
+I wrote a handy bash script that creates an archive of all the tweets I've
+posted in the week since the previous backup afterwhich it deletes them from
+Twitter's servers.
 
 ### Prerequisites
 
-1. Install [t](https://github.com/sferik/t), a command-line tool for Twitter.
-2. Create a backup folder eg. `mkdir ~/archive_twitter_user`.
-3. Add something like the following to your crontab:
+1. Install [t](https://github.com/sferik/t), an awkwardly named command-line tool for Twitter.
+2. You'll want to add something like the following to your crontab if you
+   planning on running it on a schedule:
 
         SHELL=/bin/bash
         # Run `twttr_autodestructor.sh`at 11:45 every Sunday
-        45 23 * * 0 source twttr_autodestructor.sh
+        45 23 * * 0 source /home/kanye/twttr_autodestructor.sh
 
 ### Script
 
-Stick this wherever you run scripts from.
+I've put this in my home directory, but you can put it wherever you want.
+
+You'll need to set the `BOX_USER`, `TWITTER_USER` and `BACKUP_FOLDER` variables
+(and don't forget to create the path to the `BACKUP_FOLDER` eg. `mkdir
+/home/kanye/archive_kanyewest`).
 
     #!/bin/bash
 
+    # twttr_autodestructor.sh
+    # For all your automatic Tweet backup and destruction needs
+
     # Variables
-    BOX_USER=vagrant
-    TWITTER_USER=hello_ebooks
+
+    # The user you're running the script as eg. `kanye`
+    BOX_USER=
+    # The Twitter account you want to backup eg. `hello_ebooks`
+    TWITTER_USER=
+    BACKUP_FOLDER=/home/${BOX_USER}/archive_${TWITTER_USER}/
     FILE=${TWITTER_USER}_$(date +%d%m%y).csv
 
     # Make workspace directory
