@@ -8,7 +8,7 @@ tags:
 ### About
 
 I wrote a handy bash script that creates an archive of all the tweets posted
-then deletes them from Twitter's servers. It's meant to be run by cron weekly.
+then deletes them from Twitter's servers. I run it with cron on a weekly basis.
 
 ### Prerequisites
 
