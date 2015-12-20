@@ -53,7 +53,7 @@ You'll need to set the `BOX_USER`, `TWITTER_USER` and `BACKUP_FOLDER` variables
     if [ -s ${FILE} ] ; then
 
       # Copy archive
-      cp $FILE /home/${BOX_USER}/archive_${TWITTER_USER}/.
+      cp ${FILE} /home/${BOX_USER}/archive_${TWITTER_USER}/.
 
       # Remove columns headers		
       sed -i '1d' ${FILE}
