@@ -11,18 +11,18 @@ tags:
 shows a green dot when you have an internet connection, or a red dot if you
 don't have an internet connection.
 
-You can download the latest version [here](https://www.strongspace.com/rey/public/Palin.zip).
+Download the latest version [here](https://www.strongspace.com/rey/public/Palin.zip).
 
-I made Palin for two reasons:
+I built Palin for two reasons:
 
 1. I tether using my iPhone on the commute to work -- the internet is often
 flaky and I regularly find myself opening a terminal and running `ping
 8.8.8.8`.
 2. The wifi card on my work machine is rather troublesome, so it's
-nice to have an internet status indicator that's available at a glance.
+nice to have the internet status available at a glance.
 
-Palin is named for Michael Palin, whose television travel series [Around the
-World in 80
+Palin is named for [Michael Palin](https://en.wikipedia.org/wiki/Michael_Palin),
+whose television travel series [Around the World in 80
 Days](https://en.wikipedia.org/wiki/Michael_Palin:_Around_the_World_in_80_Days)
 happened to be television the night before I decided to build it.
 
