@@ -5,6 +5,10 @@ tags:
 - twttr
 ---
 
+**EDIT** (10/01/15): This has been since replaced by [a new
+version](https://github.com/rey/twttr_autodestructor) of
+`twttr_autodestructor`.
+
 ### About
 
 I wrote a handy bash script that creates an archive of all the tweets posted
