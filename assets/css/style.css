@@ -39,7 +39,7 @@ body {
   body h2, body h3, body b, body strong {
     color: #4b494a;
     font-weight: 700; }
-  body h1, body h2, body h3, body p, body ul, body ol, body li {
+  body h1, body h2, body h3, body p, body ul, body ol {
     margin-bottom: 20px; }
   body a {
     color: #5656d8; }
@@ -160,6 +160,9 @@ aside {
   #post ol {
     line-height: 20px;
     list-style-position: outside; }
+    #post ul li,
+    #post ol li {
+      margin-bottom: 10px; }
   #post ul {
     list-style-type: disc; }
   #post ol {
