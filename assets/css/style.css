@@ -120,8 +120,10 @@ aside {
     column-count: 2;
     font-size: 12px;
     line-height: normal; }
-  aside ul.elsewhere li a {
-    color: #4b494a; }
+  aside ul.elsewhere li {
+    margin-bottom: 20px; }
+    aside ul.elsewhere li a {
+      color: #4b494a; }
   aside ul.elsewhere:hover li a {
     color: #5656d8; }
   aside div:last-child a {
