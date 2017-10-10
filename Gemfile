@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
-ruby "2.1.3"
+ruby "2.4.0"
 
 gem 'foreman', '~> 0.78.0'
-gem 'jekyll', '~> 2.4.0'
-gem 'jekyll-sitemap', '~> 0.8.1'
+gem 'jekyll', '~> 3.5.2'
+gem 'jekyll-sitemap', '~> 1.1.1'
 gem 'html-proofer', '~> 2.3.0'
-gem 'kramdown', '~> 1.9.0'
-gem 'sass', '~> 3.4.16'
+gem 'kramdown', '~> 1.13.2'
+gem 'sass', '~> 3.5.1'
