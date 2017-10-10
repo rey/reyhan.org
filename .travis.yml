@@ -1,7 +1,7 @@
 sudo: false
 language: ruby
 rvm:
-- 2.1
+- 2.4.0
 script:
 - bundle exec sass -c assets/sass/style.sass
 - bundle exec jekyll build
