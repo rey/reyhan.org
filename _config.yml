@@ -12,7 +12,8 @@ exclude: [
   "scripts",
   ".travis.yml",
   ".ruby-version",
-  "_config.yml"
+  "_config.yml",
+  "vendor"
 ]
 
 
