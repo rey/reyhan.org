@@ -4,6 +4,10 @@ layout: default
 <article class="post">
   <h2>{{ page.title }}</h2>
   {{ content }}
-  <a href="{{ post.url }}"><time datetime="{{ page.date | date : "%Y-%m-%d"}}">{{ page.date | date: "%d %b" }}</time></a>
+  <a title="{{ page.date | date : "%Y-%m-%d"}}" href="{{ post.url }}">
+    <time datetime="{{ page.date | date : "%Y-%m-%d"}}">
+      {{ page.date | date: "%d %b" }}
+    </time>
+  </a>
 </article>
 

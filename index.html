@@ -12,7 +12,11 @@ title: Home
         <h2>{{ post.title }}</h2>
       {% endif %}
       {{ post.content }}
-      <a href="{{ post.url }}"><time datetime="{{ post.date | date : "%Y-%m-%d"}}">{{ post.date | date: "%d %b" }}</time></a>
+      <a title="{{ post.date | date : "%Y-%m-%d"}}" href="{{ post.url }}">
+        <time datetime="{{ post.date | date : "%Y-%m-%d"}}">
+          {{ post.date | date: "%d %b" }}
+        </time>
+      </a>
     </article>
   {% endfor %}
 </section>

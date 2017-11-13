@@ -69,7 +69,6 @@ body {
     margin-bottom: 1.5rem;
     padding: 2px; }
     body pre code {
-      color: #fff;
       padding: 0; }
   body p {
     margin-bottom: 1.5rem; }
@@ -151,9 +150,9 @@ footer {
   footer p {
     margin-bottom: 0; }
 
-section#about {
+section#archive {
   margin-bottom: 4.5rem; }
-  section#about time {
+  section#archive time {
     margin-right: 0.75rem; }
 
 /*# sourceMappingURL=style.css.map */

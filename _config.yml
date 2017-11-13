@@ -36,7 +36,7 @@ port: 7777
 
 # Meta
 author: Rey Dhuny
-description: This is a tagline
+description: This is where <a href="mailto:rey+web@zzmag.com">Rey Dhuny</a> posts internet things.
 title : This is my homepage
 url : http://reyhan.org
 feed:

@@ -18,6 +18,7 @@
           </a>
         </h1>
         <p>{{ site.description }}</p>
+        <p><a href="/about.html">About + archives</a></p>
       </header>
 
       <main>
@@ -25,7 +26,9 @@
       </main>
 
       <footer>
-        <p>There are {{ site.posts | size }} posts.</p>
+        <p>
+          There are {{ site.posts | size }} posts <a href="/archive.html">in the archive</a>.
+        </p>
       </footer>
     </div><!-- end container -->
   </body>
