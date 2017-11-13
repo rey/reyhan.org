@@ -1,25 +1,44 @@
+# https://jekyllrb.com/docs/configuration
+
+# Handling Reading
+encoding: utf-8
 exclude: [
-  ".rvmrc",
-  ".rbenv-version",
-  "config.rb",
   "CNAME",
-  "Procfile",
-  "README",
   "Gemfile",
   "Gemfile.lock",
+  "Procfile",
+  "README",
   "sass",
-  "Vagrantfile",
-  "bootstrap.sh",
-  "vendor",
-  ".travis.yml"
+  "scripts",
+  ".travis.yml",
+  ".ruby-version",
+  "_config.yml",
+  "vendor"
 ]
 
-title     : This is my homepage
-url       : http://reyhan.org
-tagline   : wubwubwub
-author    : Rey Dhuny
-permalink : /:year/:month/:title.html
-encoding  : utf-8
-markdown  : kramdown
-port      : 7777
-timezone  : Europe/London
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+
+# Outputting
+permalink: /:year/:month/:title.html
+timezone: Europe/London
+
+
+# Conversion
+markdown: kramdown
+
+# Serving
+port: 7777
+
+# Meta
+author: Rey Dhuny
+description: This is where <a href="mailto:rey+web@zzmag.com">Rey Dhuny</a> posts internet things.
+title : This is my homepage
+url : http://reyhan.org
+feed:
+  path: atom.xml

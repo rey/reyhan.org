@@ -1,11 +1,16 @@
-=border-radius($radius)
-  -webkit-border-radius: $radius
-  -moz-border-radius: $radius
-  -ms-border-radius: $radius
-  border-radius: $radius
+@mixin bp($point)
+  @if $point == less-than-max-width
+    @media (max-width: $max-width)
+      @content
 
-=column-count($count)
-  -webkit-column-count: $count
-  -moz-column-count: $count
-  -ms-column-count: $count
-  column-count: $count
+=box-sizing($box-model)
+  -webkit-box-sizing: $box-model
+  -moz-box-sizing: $box-model
+  box-sizing: $box-model
+
+=outline
+  outline: 1px solid red !important
+
+=squish
+  position: relative
+  top: 1px

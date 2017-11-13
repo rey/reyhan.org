@@ -1,4 +1,36 @@
-{% include structure/header.html %}
-{{ content }}
-{% include structure/aside.html %}
-{% include structure/footer.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title != 'Home' %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/{{ site.feed.path }}" rel="alternate" type="application/rss+xml" title="RSS" />
+    <link href="/assets/images/reyhan.png" rel="shortcut icon" />
+  </head>
+  <body>
+    <div class="reyhan">
+      <header>
+        <h1>
+          <a title="{{ site.tagline }}" href="/">
+            {{ site.title }}
+          </a>
+        </h1>
+        <p>{{ site.description }}</p>
+        <p><a href="/archive.html">About + archives</a></p>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        <p>
+          There are {{ site.posts | size }} posts <a href="/archive.html">in the archive</a>.
+        </p>
+      </footer>
+    </div><!-- end container -->
+  </body>
+</html>
+
