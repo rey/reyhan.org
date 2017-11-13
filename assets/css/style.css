@@ -58,9 +58,19 @@ body {
   body i, body em {
     font-style: italic; }
   body code {
-    font-family: "Courier New", monospace; }
+    background-color: #000;
+    color: #fff;
+    font-family: "Courier New", monospace;
+    font-size: 0.75rem;
+    padding: 0.25rem; }
   body pre {
-    overflow: scroll; }
+    background-color: #000;
+    overflow: scroll;
+    margin-bottom: 1.5rem;
+    padding: 2px; }
+    body pre code {
+      color: #fff;
+      padding: 0; }
   body p {
     margin-bottom: 1.5rem; }
   body q {
@@ -78,15 +88,14 @@ body {
   body main {
     float: left;
     width: 500px; }
-    body main h2 {
-      font-size: 1.11111rem;
+    body main h2, body main h3 {
       font-weight: 700;
       line-height: 1.5rem;
       margin-bottom: 1.5rem; }
+    body main h2 {
+      font-size: 1.11111rem; }
     body main h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1.5rem; }
+      font-size: 1rem; }
   body article {
     margin-bottom: 4.5rem; }
     body article time {
