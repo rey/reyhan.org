@@ -29,7 +29,7 @@ timezone: Europe/London
 
 
 # Conversion
-Markdown: kramdown
+markdown: kramdown
 
 # Serving
 port: 7777
