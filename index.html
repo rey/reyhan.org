@@ -1,14 +1,18 @@
 ---
 layout: default
-title: home
+title: Home
 ---
-<section id="index">
-  {% for post in site.posts %}
-    <article>
-      <h2><a title="Posted on {{ post.date | date_to_string }}" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
-      <summary>
-        <p>{{ post.content | strip_html | truncate: 125 }}</p>
-      </summary>
+
+<section id="home">
+  {% for post in site.posts limit: 20 %}
+    <article class="{{ post.layout}}">
+      {% if post.link %}
+        <h2><a href="{{ post.link }}">{{ post.title }}</a></h2>
+      {% else %}
+        <h2>{{ post.title }}</h2>
+      {% endif %}
+      {{ post.content }}
+      <a href="{{ post.url }}"><time datetime="{{ post.date | date : "%Y-%m-%d"}}">{{ post.date | date: "%d %b" }}</time></a>
     </article>
   {% endfor %}
 </section>

@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<article id="post">
+<article class="post">
   <h2>{{ page.title }}</h2>
-  <time datetime="{{ page.date | date : "%Y-%m-%d"}}">{{ page.date | date_to_long_string }}</time>
   {{ content }}
+  <a href="{{ post.url }}"><time datetime="{{ page.date | date : "%Y-%m-%d"}}">{{ page.date | date: "%d %b" }}</time></a>
 </article>
-<!-- end post -->
+
