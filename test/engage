@@ -1,1 +1,0 @@
-casperjs test tests/ --includes=config.js
