@@ -10,7 +10,7 @@ tags:
 held in Google Authenticator.
 
 Having suffered performance issues with the iOS 11.1.1 update, I decided to
-restore my iPhone to factory settings, then restore from a backup but concerned that I would lose the
+restore my iPhone to factory settings, then restore from a backup but worried that I would lose the
 accounts held in [Google
 Authenticator](https://itunes.apple.com/gb/app/google-authenticator/id388497605).
 
