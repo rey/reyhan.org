@@ -1,5 +1,9 @@
 sudo: false
 language: ruby
+branches:
+  only:
+  - gh-pages
+  - /.*/
 rvm:
 - 2.4.0
 script:
