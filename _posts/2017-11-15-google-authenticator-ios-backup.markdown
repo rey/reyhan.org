@@ -6,7 +6,7 @@ tags:
 - security
 ---
 
-*TL;DR* Creating an encrypted iOS backup in iTunes _will_ back up your accounts
+**TL;DR** Creating an encrypted iOS backup in iTunes _will_ back up your accounts
 held in Google Authenticator.
 
 Having suffered performance issues with the iOS 11.1.1 update, I decided to
