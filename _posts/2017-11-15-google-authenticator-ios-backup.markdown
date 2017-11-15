@@ -10,9 +10,11 @@ tags:
 held in Google Authenticator.
 
 Having suffered performance issues with the iOS 11.1.1 update, I decided to
-restore my iPhone to factory settings but was concerned that I would lose the
+restore my iPhone to factory settings and then restore from a backup but was concerned that I would lose the
 accounts held in [Google
 Authenticator](https://itunes.apple.com/gb/app/google-authenticator/id388497605).
+
+Are Google Authenticator accounts saved as part of iOS Backups?
 
 I'm happy to report that if you create an [Encrypted iPhone backup in
 iTunes](https://support.apple.com/en-gb/HT205220) then all the accounts in
