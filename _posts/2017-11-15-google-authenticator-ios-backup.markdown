@@ -6,12 +6,12 @@ tags:
 - security
 ---
 
-**TL;DR** Creating an **encrypted** iOS backup in iTunes _will_ back up your accounts
-held in Google Authenticator.
+**TL;DR** Creating an **encrypted** iOS backup in iTunes _will_ back up your
+accounts held in Google Authenticator.
 
 Having suffered performance issues with the iOS 11.1.1 update, I decided to
-restore my iPhone to factory settings, then restore from a backup but worried that I would lose the
-accounts held in [Google
+restore my iPhone to factory settings, then restore from a backup but worried
+that I would lose the accounts held in [Google
 Authenticator](https://itunes.apple.com/gb/app/google-authenticator/id388497605).
 
 Are Google Authenticator accounts saved as part of iOS Backups?
