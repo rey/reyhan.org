@@ -7,8 +7,8 @@ tags:
 ---
 
 Last month the decision was made to consolidate years of newsletters, weblog
-posts and other minutiae from various Jekyll instances to one WordPress-powered
-deal.
+posts and other minutiae from various Jekyll instances to [one WordPress-powered
+deal](https://zzmag.org).
 
 A fair amount of time was spent researching the best, quickest (and easiest!)
 way to do this but, unsurprisingly, most searches turned up the opposite:
